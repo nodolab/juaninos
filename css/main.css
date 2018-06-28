@@ -1,0 +1,966 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+
+:root {
+    --primary: #42283f;
+    --primary-lighten: #8E2C83;
+    --primary-darken: #240C20;
+    --white: #FFF;
+    --font-color: #626262;
+    --gold: #96701e;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+  Scrollbar
+   ========================================================================== */
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-button {
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border: none;
+  border-radius: 16px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-lighten);
+}
+::-webkit-scrollbar-thumb:active {
+  background: var(--primary-lighten);
+}
+::-webkit-scrollbar-track {
+  background: #FFF;
+  border: none;
+  /*border-radius: 39px;*/
+}
+::-webkit-scrollbar-track:hover {
+  background: #EEE                                                                                                                                                                                                                                                                                                                                                                                                                                                  ;
+}
+::-webkit-scrollbar-track:active {
+  background: #3e2723;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('../fonts/MinionPro-BoldIt.eot');
+    src: url('../fonts/MinionPro-BoldIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MinionPro-BoldIt.woff2') format('woff2'),
+        url('../fonts/MinionPro-BoldIt.woff') format('woff'),
+        url('../fonts/MinionPro-BoldIt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('../fonts/MinionPro-Regular.eot');
+    src: url('../fonts/MinionPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MinionPro-Regular.woff2') format('woff2'),
+        url('../fonts/MinionPro-Regular.woff') format('woff'),
+        url('../fonts/MinionPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('../fonts/MinionPro-Bold.eot');
+    src: url('../fonts/MinionPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MinionPro-Bold.woff2') format('woff2'),
+        url('../fonts/MinionPro-Bold.woff') format('woff'),
+        url('../fonts/MinionPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('../fonts/MinionPro-BoldCn.eot');
+    src: url('../fonts/MinionPro-BoldCn.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MinionPro-BoldCn.woff2') format('woff2'),
+        url('../fonts/MinionPro-BoldCn.woff') format('woff'),
+        url('../fonts/MinionPro-BoldCn.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('../fonts/MinionPro-MediumIt.eot');
+    src: url('../fonts/MinionPro-MediumIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MinionPro-MediumIt.woff2') format('woff2'),
+        url('../fonts/MinionPro-MediumIt.woff') format('woff'),
+        url('../fonts/MinionPro-MediumIt.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('../fonts/MinionPro-Medium.eot');
+    src: url('../fonts/MinionPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MinionPro-Medium.woff2') format('woff2'),
+        url('../fonts/MinionPro-Medium.woff') format('woff'),
+        url('../fonts/MinionPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('../fonts/MinionPro-BoldCnIt.eot');
+    src: url('../fonts/MinionPro-BoldCnIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MinionPro-BoldCnIt.woff2') format('woff2'),
+        url('../fonts/MinionPro-BoldCnIt.woff') format('woff'),
+        url('../fonts/MinionPro-BoldCnIt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('../fonts/MinionPro-It.eot');
+    src: url('../fonts/MinionPro-It.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MinionPro-It.woff2') format('woff2'),
+        url('../fonts/MinionPro-It.woff') format('woff'),
+        url('../fonts/MinionPro-It.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('../fonts/CenturyGothic.eot');
+    src: url('../fonts/CenturyGothic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CenturyGothic.woff2') format('woff2'),
+        url('../fonts/CenturyGothic.woff') format('woff'),
+        url('../fonts/CenturyGothic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Century Gothic", sans-serif;
+    font-size: 14px;
+    line-height: 2;
+    color: var(--font-color);
+}
+
+section {
+    position: relative;
+    overflow: hidden;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+    color: var(--white);
+}
+
+footer > div {
+    /*display: table;*/
+    width: 100%;
+}
+
+footer .footer-desc {
+    position: relative;
+    overflow: hidden;
+    padding-right: 5%;
+    padding-left: 5%;
+    background: var(--primary);
+}
+
+footer .footer-desc > .row {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+footer .footer-menu {
+    position: relative;
+    padding-bottom: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: var(--primary-darken);
+}
+
+footer .footer-menu ul {
+    margin: 0 auto;
+    /*padding-left: 0;*/
+    padding-top: 10px;
+    list-style-type: none;
+}
+
+.footer-menu li:not(:last-child) {
+    border-right: 1px solid var(--white);
+}
+
+.footer-menu li a {
+    padding: 5px 25px;
+    font-size: 0.75em;
+    color: var(--white);
+    text-decoration: none;
+}
+
+
+#instafeed {
+    width: 95%;
+    /*height: 200px;*/
+    margin: 0 auto;
+}
+
+#instafeed a {
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-right: 15px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.banner-promos {
+    width: 100%;
+    position: relative;
+    color: var(--white);
+}
+
+.banner-promos:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+}
+
+.wrapper {
+    padding-top: 100px;
+    position: relative;
+}
+
+.parallax {
+    width: 100%;
+    /*height: 100%;*/
+    background: url(../img/fondo.png);
+    background-position: 50% 0;
+    background-repeat: no-repeat;   
+    background-size: cover;
+}
+
+.parallax > div {
+    position: relative;
+}
+
+.parallax::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background: rgba(255,255,255,0.2);*/
+    z-index: 0;
+}
+
+.title {
+    text-align: center;
+    font-family: "Minion Pro", serif;
+    padding: 0px 10px;    
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.title-section {
+    /*letter-spacing: 5px;*/
+    /*font-family: "Minion Pro", serif;*/
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+    color: var(--gold);
+    font-size: 2.5rem;
+}
+
+.title-section-container {
+    width: 0;
+    height: 60px;
+    /*width: 463px;*/
+    background: url(../img/texto.png) left 0 no-repeat;
+    transition: width 3s ease;
+}
+
+.title-section-container.appear {
+    width: 463px;
+}
+
+.header-section {
+    width: 100%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+/**paddings**/
+
+.no-padding {
+    padding: 0;
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.pt-50 {
+    padding-top: 50px;
+}
+
+.pb-10 {
+    padding-bottom: 10px;
+}
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.padding-card {
+    padding: 50px;
+}
+
+/**Margins**/
+
+.no-margin {
+    margin: 0;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mt-80 {
+    margin-top: 80px;
+}
+
+/** Flex **/
+
+.flex-column-center {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-column-around {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flex-row-center {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/** Preloader **/
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+    z-index: 10;
+}
+
+.preloader.top-circle {
+    position: absolute;
+    top: -125px;
+    left: 50%;
+    margin-left: -125px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    /*padding-top: 90px;
+    padding-left: 3%;
+    padding-right: 3%;*/
+    width: 250px;
+    height: 250px;
+    transition: border-bottom-left-radius 1s ease, border-bottom-right-radius 1s ease, top 3s ease, left 3s ease, margin-left 3s ease, width 3s ease, height 3s ease;
+    /*transition: all 3s ease-in-out;*/
+}
+
+#logo-svg,
+#logo-png {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -8.333%;
+}
+
+#logo-texto {
+    width: 69%;
+    position: absolute;
+    top: 128px;
+    left: 17%;
+    /*margin-left: -38.5%;*/
+}
+
+#logo-png.top-logo {
+    width: 30%;
+    top: 130px;
+    left: 35%;
+    margin-left: 0;
+    transition: all 3s ease 1s;
+}
+
+#monje-centro {
+    animation: draw 1.75s ease-in-out 0.75s forwards;
+}
+
+#monje-izquierda {
+    animation: draw 1.75s ease-in-out 1.5s forwards;
+}
+
+#monje-derecha {
+    animation: draw 1.75s ease-in-out 1.5s forwards;
+}
+
+#techo, #balcon {
+    animation: draw 2.25s ease-in-out 2.75s forwards;
+}
+
+#bolita3{
+    animation: draw 1.5s ease-in-out 0.75s forwards;
+}
+
+#bolita2, #bolita4{
+    animation: draw 1.25s ease-in-out 1.5s forwards;
+}
+
+#bolita1, #bolita5{
+    animation: draw 1s ease-in-out 2s forwards;
+}
+
+#contorno {
+    animation: draw 5s ease-in-out forwards;
+}
+
+@keyframes draw {
+    from{}
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/** Home **/
+
+.home {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    transition: all 5s ease 1.5s;
+}
+
+.home-logo {
+    position: absolute;
+    top: -125px;
+    border-radius: 50%;
+    padding-top: 90px;
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 250px;
+    height: 250px;
+    background: #FFF;
+}
+
+.home-title,
+.home-suites .title {
+    /*width: 100%;*/
+    color: var(--white);
+    letter-spacing: 15px;
+    background: rgba(0,0,0,0.3);
+    box-shadow: 0 0 25px rgba(0,0,0,0.6);
+    border-radius: 50%;
+    transition: all 3s;
+    animation-duration: 3s;
+    z-index: 1;
+}
+
+.menu {
+    list-style-type: none;    
+}
+
+.nav-menu {
+    position: absolute;
+    bottom: 20px;
+    padding: 0 30px;
+    /*font-weight: 600;*/
+    border-radius: 50%;
+    /*background: rgba(0,0,0,0.4);*/
+    /*box-shadow: 0 0 25px rgba(0,0,0,0.6);*/
+}
+
+.nav-menu:hover li a{
+    opacity: 0.5;
+}
+
+.nav-menu li a {
+    display: block;
+    padding: 5px 25px;
+    text-decoration: none;
+    color: var(--white);
+    text-shadow: 3px 3px 8px #111;
+    transition: all 0.3s;
+}
+
+.nav-menu li a:hover {
+    background: var(--primary);
+    opacity: 1;
+    /*font-weight: 700;*/
+}
+
+.home-about .container {
+    position: relative;
+    z-index: 2;
+}
+
+/*.background-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.55;
+    width: 100%;
+    height: 100%;
+    background: url(../img/fondo.png);
+    background-size: cover;
+    z-index: -1;
+}*/
+
+.text-card {
+    width: 230px;
+    height: 230px;
+    /*border: 1px solid #222;*/
+}
+
+.home-about-card {
+    position: absolute;
+    text-align: center;
+    padding: 4%;
+    line-height: 1.5;
+    background: var(--white);    
+}
+
+.home-about-card-1 {
+    left: 2%;
+    top: 5%;
+}
+
+.home-about-card-2 {
+    right: 2%;
+    top: 38%;
+}
+
+.home-about-card-3 {
+    left: 2%;
+    bottom: 16%;
+}
+
+.home-about-card-4 {
+    left: 50%;
+    top: 53%;
+    margin-left: -115px;
+    margin-top: -115px;
+}
+
+.home-about-card:before {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    opacity: 0.9;
+    width: 90%;
+    height: 90%;
+    background: url(../img/textura5.png)no-repeat center center;
+    background-size: cover;
+}
+
+.img-home-about-3 {
+    position: absolute;
+    top: 25%;
+    left: 12%;
+}
+
+.home-suites-title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    top: 50%;
+    margin-top: -1rem;
+}
+
+.home-suites-images {
+    overflow: hidden;
+    display: table;
+    width: 100%;
+    height: 550px;
+    /*background: url(../img/img_2.jpg)no-repeat center center fixed;
+    background-size: cover;*/
+    /*transition: all 0.8s ease-in-out;*/
+}
+
+.suite-preview {
+    height: 100%;
+    width: 25%;
+    position: relative;
+    display: table-cell;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    transition: all 1.2s ease-in-out; 
+}
+
+.suite-preview:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: all 0.5s;
+}
+
+.home-suites-images:hover > .suite-preview {
+    width: 12%;
+}
+
+.home-suites-images:hover > .suite-preview:hover {
+    width: 44%;
+}
+
+.home-suites-images:hover > .suite-preview:before {
+    background: rgba(0,0,0,0.8);
+}
+
+.home-suites-images:hover > .suite-preview:hover:before {
+    background: rgba(0,0,0,0);
+}
+
+.suite-1 {
+    background-position-x: left;    
+}
+
+.suite-2,
+.suite-3 {
+    background-position-x: center;
+}
+
+.suite-4 {
+    background-position-x: right; 
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+/*
+
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+.box-shadow {
+    box-shadow: 7px 7px 12px rgba(0,0,0,0.5);
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.vitral:before,
+.vitral2:before,
+.header-overlay:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 3s ease;
+}
+
+.vitral:before,
+.vitral2:before {
+    background: url(../img/vitral5.png);
+    background-repeat: repeat;
+    background-position: center center;
+}
+
+.vitral:before {
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.25;    
+}
+
+.vitral2:before {
+    opacity: 0.35;
+    background-size: 25%;
+}
+
+.vitral-opacity:before {
+    /*background-size: 600%;*/
+    opacity: 1;
+}
+
+.header-overlay:before {
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.6) 5%, rgba(0,0,0,0.4) 20%, rgba(0,0,0,0.05) 60%);
+    background: -o-linear-gradient(bottom, rgba(0,0,0,0.6) 5%, rgba(0,0,0,0.4) 20%, rgba(0,0,0,0.05) 60%);
+    background: linear-gradient(to top, rgba(0,0,0,0.6) 5%, rgba(0,0,0,0.4) 20%, rgba(0,0,0,0.05) 60%); 
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
