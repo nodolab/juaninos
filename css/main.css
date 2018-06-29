@@ -271,6 +271,7 @@ footer .footer-menu ul {
 
 .parallax {
     width: 100%;
+    background: var(--primary);
     /*height: 100%;*/
     /*background: url(../img/fondo.png);
     background-position: 50% 0;
@@ -604,14 +605,17 @@ footer .footer-menu ul {
 }
 
 #slide-container {
-    width: 300%;
+    width: 100%;
     height: 100%;
 }
 
 .home-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100%;
     float: left;
-    width: 33.33%;
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
