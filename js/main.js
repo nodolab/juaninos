@@ -29,14 +29,14 @@
         $("html").addClass("mobile");
     }
 
-    function parallaxOn(){
+    // function parallaxOn(){
 
-        if ($("html").hasClass("no-mobile")) {
-            $('.parallax').parallax("50%", 0.4);
-            $(".parallax").css("background-attachment", "fixed");
-        }
+    //     if ($("html").hasClass("no-mobile")) {
+    //         $('.parallax').parallax("50%", 0.4);
+    //         $(".parallax").css("background-attachment", "fixed");
+    //     }
 
-    }
+    // }
 
 	new WOW().init();
 	
@@ -88,7 +88,7 @@
     });
 
 	$(window).resize(function(){        
-        parallaxOn();
+        // parallaxOn();
     });	
 
 	$(window).load(function() {
@@ -146,8 +146,27 @@
 		  }
 		});
 
-		parallaxOn();
+		// parallaxOn();
 	});
 
+	var controller = new ScrollMagic.Controller();
+
+	var wipeAnimation = new TimelineMax()
+		.to('#slide-container', 0.5, {z: -150})
+		.to('#slide-container', 1, {x: "-33%"})
+		.to('#slide-container', 0.5, {z: 0})
+		.to('#slide-container', 0.5, {z: -150, delay: 1})
+		.to('#slide-container', 1, {x: "-33%"})
+		.to('#slide-container', 0.5, {z: 0});
+
+	new ScrollMagic.Scene({
+			triggerElement: "#home-about",
+			triggerHook: "onLeave",
+			duration: "500%"
+		})
+		.setPin("#home-about")
+		.setTween(wipeAnimation)
+		.addIndicators()		
+		.addTo(controller);
 	
-})( jQuery );
+})( jQuery);
