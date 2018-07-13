@@ -278,27 +278,17 @@ footer .footer-menu ul {
 .parallax {
     width: 100%;
     background: var(--primary);
-    /*height: 100%;*/
-    /*background: url(../img/fondo.png);
+    height: 100%;
+    background: url(../img/fondo.png);
     background-position: 50% 0;
     background-repeat: no-repeat;   
-    background-size: cover;*/
+    background-size: cover;
 }
 
-.parallax > div {
+.parallax > section {
     position: relative;
 }
 
-.parallax::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /*background: rgba(255,255,255,0.2);*/
-    z-index: 0;
-}
 
 .title {
     text-align: center;
@@ -313,9 +303,10 @@ footer .footer-menu ul {
 .title-section {
     /*letter-spacing: 5px;*/
     /*font-family: "Minion Pro", serif;*/
-    font-family: 'Great Vibes', cursive;
+    text-align: center;
     font-weight: 400;
-    color: var(--gold);
+    letter-spacing: 0.3rem;
+    color: var(--primary);
     font-size: 2.5rem;
 }
 
@@ -775,6 +766,7 @@ footer .footer-menu ul {
     /*text-align: center;*/
     padding: 10px;
     line-height: 1.5;
+    color: var(--primary);
     background: var(--white);
     display: flex;
     align-items: center;
@@ -808,9 +800,12 @@ footer .footer-menu ul {
     bottom: 16%;
 }
 
-.home-about-card-4 {
+.text-about-card-4 {
+    width: 200px;
+    height: 200px;
     left: 50%;
-    top: 53%;
+    top: 55%;
+    padding: 10px 30px;
     margin-left: -115px;
     margin-top: -115px;
 }
@@ -979,6 +974,10 @@ footer .footer-menu ul {
 .btn-seg-patio.show-slide-3 {
     bottom: 10%;
     opacity: 1;
+}
+
+.historia {
+    padding: 80px 0;
 }
 
 /* ==========================================================================

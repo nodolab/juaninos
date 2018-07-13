@@ -29,14 +29,14 @@
         $("html").addClass("mobile");
     }
 
-    // function parallaxOn(){
+    function parallaxOn(){
 
-    //     if ($("html").hasClass("no-mobile")) {
-    //         $('.parallax').parallax("50%", 0.4);
-    //         $(".parallax").css("background-attachment", "fixed");
-    //     }
+        if ($("html").hasClass("no-mobile")) {
+            $('.parallax').parallax("50%", 0.4);
+            $(".parallax").css("background-attachment", "fixed");
+        }
 
-    // }
+    }
 
 	new WOW().init();
 	
@@ -146,7 +146,7 @@
 		  }
 		});
 
-		// parallaxOn();
+		parallaxOn();
 	});
 	
 })( jQuery);
