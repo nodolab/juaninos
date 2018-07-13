@@ -2,11 +2,12 @@
 
 :root {
     --primary: #42283f;
-    --primary-lighten: #8E2C83;
-    --primary-darken: #240C20;
+    --deepblue: #00021F;
+    --deepblue-darken: #000116;
     --white: #FFF;
     --font-color: #626262;
-    --gold: #96701e;
+    --gold: #e0bb6d;
+    --black: #111;
 }
 
 /* ==========================================================================
@@ -37,10 +38,10 @@
   border-radius: 16px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--primary-lighten);
+  background: var(--deepblue);
 }
 ::-webkit-scrollbar-thumb:active {
-  background: var(--primary-lighten);
+  background: var(--deepblue);
 }
 ::-webkit-scrollbar-track {
   background: #FFF;
@@ -198,7 +199,12 @@ footer .footer-desc {
     overflow: hidden;
     padding-right: 5%;
     padding-left: 5%;
-    background: var(--primary);
+    background: var(--deepblue);
+}
+
+footer .footer-desc a {
+    color: var(--gold);
+    text-decoration: none;
 }
 
 footer .footer-desc > .row {
@@ -211,7 +217,7 @@ footer .footer-menu {
     padding-bottom: 30px;
     padding-left: 5%;
     padding-right: 5%;
-    background: var(--primary-darken);
+    background: var(--deepblue-darken);
 }
 
 footer .footer-menu ul {
@@ -436,8 +442,17 @@ footer .footer-menu ul {
     left: 0;
     width: 100%;
     height: 100%;
+    /*background: var(--white);*/
+    z-index: 15;
+}
+
+.overlay-bco {
     background: var(--white);
-    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .preloader.top-circle {
@@ -445,14 +460,13 @@ footer .footer-menu ul {
     top: -125px;
     left: 50%;
     margin-left: -125px;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
+    /*background: transparent;*/
     /*padding-top: 90px;
     padding-left: 3%;
     padding-right: 3%;*/
     width: 250px;
     height: 250px;
-    transition: border-bottom-left-radius 1s ease, border-bottom-right-radius 1s ease, top 3s ease, left 3s ease, margin-left 3s ease, width 3s ease, height 3s ease;
+    transition: top 1.5s ease, left 1.5s ease, margin-left 1.5s ease, width 1.5s ease, height 1.5s ease;
     /*transition: all 3s ease-in-out;*/
 }
 
@@ -467,49 +481,49 @@ footer .footer-menu ul {
 #logo-texto {
     width: 69%;
     position: absolute;
-    top: 128px;
+    top: 150px;
     left: 17%;
     /*margin-left: -38.5%;*/
 }
 
 #logo-png.top-logo {
-    width: 30%;
-    top: 130px;
-    left: 35%;
+    width: 32%;
+    top: 150px;
+    left: 34.5%;
     margin-left: 0;
-    transition: all 3s ease 1s;
+    transition: top 1.5s ease, left 1.5s ease, margin-left 1.5s ease, width 1.5s ;
 }
 
 #monje-centro {
-    animation: draw 1.75s ease-in-out 0.75s forwards;
+    animation: draw 0.8s ease-in-out 0.35s forwards;
 }
 
 #monje-izquierda {
-    animation: draw 1.75s ease-in-out 1.5s forwards;
+    animation: draw 0.8s ease-in-out 0.75s forwards;
 }
 
 #monje-derecha {
-    animation: draw 1.75s ease-in-out 1.5s forwards;
+    animation: draw 0.8s ease-in-out 0.75s forwards;
 }
 
 #techo, #balcon {
-    animation: draw 2.25s ease-in-out 2.75s forwards;
+    animation: draw 1.10s ease-in-out 1.35s forwards;
 }
 
 #bolita3{
-    animation: draw 1.5s ease-in-out 0.75s forwards;
+    animation: draw 0.75s ease-in-out 0.35s forwards;
 }
 
 #bolita2, #bolita4{
-    animation: draw 1.25s ease-in-out 1.5s forwards;
+    animation: draw 0.6s ease-in-out 0.75s forwards;
 }
 
 #bolita1, #bolita5{
-    animation: draw 1s ease-in-out 2s forwards;
+    animation: draw 0.5s ease-in-out 1s forwards;
 }
 
 #contorno {
-    animation: draw 5s ease-in-out forwards;
+    animation: draw 2.5s ease-in-out forwards;
 }
 
 @keyframes draw {
@@ -528,7 +542,19 @@ footer .footer-menu ul {
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
-    transition: all 5s ease 1.5s;
+}
+
+.home::before,
+.home-panel::before {
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(bottom, rgba(15,15,15, 0.6) 5%, transparent 25%, transparent 75%, rgba(15,15,15, 0.6) 100% );
+    background: -o-linear-gradient(bottom, rgba(15,15,15, 0.6) 5%, transparent 25%, transparent 75%, rgba(15,15,15, 0.6) 100% );
+    background: linear-gradient(to top, rgba(15,15,15, 0.6) 5%, transparent 25%, transparent 75%, rgba(15,15,15, 0.6) 100% );
 }
 
 .home-logo {
@@ -556,25 +582,72 @@ footer .footer-menu ul {
     z-index: 1;
 }
 
-.menu {
-    list-style-type: none;    
-}
-
-.nav-menu {
+.menu-container {
     position: absolute;
     bottom: 20px;
+    width: 100%;
+    height: 40px;
+    z-index: 12;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.nav-logo {
+    /*display: none;*/
+    /*width:55px;
+    margin-top: 10px;
+    margin-left:30px;
+    margin-right:30px;*/
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    width: 0px;
+    /*transition: all 0.5s;*/
+}
+
+.fixed-menu {
+    position: fixed;
+    bottom: auto;
+    top: 0;
+    height: 70px;
+    background: rgba(0,2,31, 0.8);
+}
+
+.fixed-menu ul.menu {
+    height: 100%;
+}
+
+.fixed-menu .nav-logo {
+    /*display: block;*/
+    /*width: 55px;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    transition: all 0.5s ease 0.3s;*/
+    position: relative;
+    top: 0;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    left: auto;
+    width: 55px;
+    transition: all 0.5s ease 0.3s;
+}
+
+.menu {
+    list-style-type: none;    
     padding: 0 30px;
+    margin: 0 auto;
     /*font-weight: 600;*/
-    border-radius: 50%;
     /*background: rgba(0,0,0,0.4);*/
     /*box-shadow: 0 0 25px rgba(0,0,0,0.6);*/
 }
 
-.nav-menu:hover li a{
+.menu:hover li a{
     opacity: 0.5;
 }
 
-.nav-menu li a {
+.menu li a {
     display: block;
     padding: 5px 25px;
     text-decoration: none;
@@ -583,10 +656,20 @@ footer .footer-menu ul {
     transition: all 0.3s;
 }
 
-.nav-menu li a:hover {
+.menu li a:hover {
     background: var(--primary);
+    /*border: 2px solid chocolate;*/
     opacity: 1;
     /*font-weight: 700;*/
+}
+
+.menu-container.fixed-menu li a {
+    text-shadow: none;
+}
+
+.menu-container.fixed-menu li a:hover {
+    background: transparent;
+    border-bottom: 2px solid var(--white);
 }
 
 .home-about .container {
@@ -598,6 +681,7 @@ footer .footer-menu ul {
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    background: #111;
     -webkit-perspective: 1000;
     -moz-perspective: 1000;
     -ms-perspective: 1000;
@@ -605,56 +689,118 @@ footer .footer-menu ul {
 }
 
 #slide-container {
-    width: 100%;
+    width: 300%;
     height: 100%;
+    overflow: hidden;
 }
 
 .home-panel {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     height: 100%;
+    width: 33.333%;
     float: left;
-    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-/*.background-pattern {
+.label-izq {
     position: absolute;
-    top: 0;
+    left: -25%;
+    padding: 5px 15px;
+    background: rgba(255,255,255,0.8);
+    color: var(--black);
+    letter-spacing: 3px;
+}
+
+.label-izq-1 {
+    top: 18%;
+    transition: left 0.6s ease;
+}
+
+.label-izq-2 {
+    top: 26%;
+    transition: left 0.6s ease 0.3s;
+}
+
+.label-izq-1.show-slide-1,
+.label-izq-2.show-slide-1 {
     left: 0;
-    opacity: 0.55;
-    width: 100%;
-    height: 100%;
-    background: url(../img/fondo.png);
-    background-size: cover;
-    z-index: -1;
-}*/
+}
+
+.label-der {
+    position: absolute;
+    right: -25%;
+    padding: 5px 15px;
+    background: rgba(255,255,255,0.8);
+    color: var(--black);
+    letter-spacing: 3px;
+}
+
+.label-der-1 {
+    bottom: 30%;
+    transition: right 0.6s ease;
+}
+
+.label-der-2 {
+    bottom: 22%;
+    transition: right 0.6s ease 0.3s;
+}
+
+.label-der-3 {
+    top: 13%;
+    transition: right 0.6s ease;
+}
+
+.label-der-4 {
+    top: 21%;
+    transition: right 0.6s ease 0.3s;
+}
+
+.label-der-1.show-slide-2,
+.label-der-2.show-slide-2,
+.label-der-3.show-slide-3,
+.label-der-4.show-slide-3 {
+    right: 0;
+}
 
 .text-card {
-    width: 230px;
-    height: 230px;
+    width: 150px;
+    height: 150px;
     /*border: 1px solid #222;*/
 }
 
 .home-about-card {
     position: absolute;
-    text-align: center;
-    padding: 4%;
+    /*text-align: center;*/
+    padding: 10px;
     line-height: 1.5;
-    background: var(--white);    
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;   
 }
 
 .home-about-card-1 {
-    left: 2%;
-    top: 5%;
+    left: 10%;
+    top: 13%;
+    opacity: 0;
+    transition: all 2s ease 1s;
+}
+
+.home-about-card-1.show-slide-2 {
+    opacity: 1;
 }
 
 .home-about-card-2 {
-    right: 2%;
-    top: 38%;
+    bottom: 10%;
+    right: 10%;
+    opacity: 0;
+    transition: all 2s ease 1s;
+}
+
+.home-about-card-2.show-slide-3 {
+    opacity: 1;
 }
 
 .home-about-card-3 {
@@ -669,7 +815,7 @@ footer .footer-menu ul {
     margin-top: -115px;
 }
 
-.home-about-card:before {
+/*.home-about-card:before {
     content: "";
     position: absolute;
     top: 5%;
@@ -679,7 +825,7 @@ footer .footer-menu ul {
     height: 90%;
     background: url(../img/textura5.png)no-repeat center center;
     background-size: cover;
-}
+}*/
 
 .img-home-about-3 {
     position: absolute;
@@ -703,7 +849,7 @@ footer .footer-menu ul {
     height: 550px;
     /*background: url(../img/img_2.jpg)no-repeat center center fixed;
     background-size: cover;*/
-    /*transition: all 0.8s ease-in-out;*/
+    /*transition: all 0.3s ease-in-out;*/
 }
 
 .suite-preview {
@@ -727,6 +873,36 @@ footer .footer-menu ul {
     transition: all 0.5s;
 }
 
+.suite-preview .bar {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3rem;
+    left: 0;
+    bottom: -3rem;
+    background: rgba(0,0,0,0.8);
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.suite-preview .bar a {
+    display: block;
+    height: 3rem;
+    padding-top: 0.5rem;
+    color: var(--gold);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.suite-preview .bar:hover {
+    background: var(--gold);
+}
+
+.suite-preview .bar:hover a {
+    color: #FFF;
+}
+
 .home-suites-images:hover > .suite-preview {
     width: 12%;
 }
@@ -735,12 +911,20 @@ footer .footer-menu ul {
     width: 44%;
 }
 
+.home-suites-images:hover > .suite-preview:hover > .bar {
+    bottom: 0;
+}
+
 .home-suites-images:hover > .suite-preview:before {
     background: rgba(0,0,0,0.8);
 }
 
 .home-suites-images:hover > .suite-preview:hover:before {
     background: rgba(0,0,0,0);
+}
+
+.home-suites-images:hover + .home-suites-title {
+    display: none;
 }
 
 .suite-1 {
@@ -756,6 +940,46 @@ footer .footer-menu ul {
     background-position-x: right; 
 }
 
+.btn {
+    display: block;
+    text-decoration: none;
+    color: var(--gold);
+    padding-bottom: 5px;
+    /*padding-left: 15px;*/
+    letter-spacing: 3px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-bottom: 2px solid var(--gold);
+    text-align: right;
+}
+
+.btn-nosotros {
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    opacity: 0;
+    transition: all 0.6s ease 0.6s;
+}
+
+.btn-nosotros.show-slide-1 {
+    bottom: 10%;
+    opacity: 1;
+}
+
+.btn-bar,
+.btn-seg-patio {
+    position: absolute;
+    bottom: 5%;
+    opacity: 0;
+    left: 10%;
+    transition: all 0.6s ease 0.6s;
+}
+
+.btn-bar.show-slide-2,
+.btn-seg-patio.show-slide-3 {
+    bottom: 10%;
+    opacity: 1;
+}
 
 /* ==========================================================================
    Helper classes
@@ -858,8 +1082,6 @@ footer .footer-menu ul {
     text-align: justify;
 }
 
-.vitral:before,
-.vitral2:before,
 .header-overlay:before {
     content: "";
     position: absolute;
@@ -868,29 +1090,6 @@ footer .footer-menu ul {
     width: 100%;
     height: 100%;
     transition: all 3s ease;
-}
-
-.vitral:before,
-.vitral2:before {
-    background: url(../img/vitral5.png);
-    background-repeat: repeat;
-    background-position: center center;
-}
-
-.vitral:before {
-    background-attachment: fixed;
-    background-size: cover;
-    opacity: 0.25;    
-}
-
-.vitral2:before {
-    opacity: 0.35;
-    background-size: 25%;
-}
-
-.vitral-opacity:before {
-    /*background-size: 600%;*/
-    opacity: 1;
 }
 
 .header-overlay:before {

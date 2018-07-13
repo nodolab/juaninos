@@ -42,31 +42,31 @@
 	
 	setTimeout(function(){
 		$('.home-title').css('letter-spacing', '5px');
-		$('.home').removeClass('vitral-opacity');
- 	}, 6800);
+ 	}, 3000);
 
  	setTimeout(function(){
 		$('#logo-png').removeClass('hide');
 		$('#logo-png').addClass('animated fadeIn');
 		$('#logo-svg').addClass('animated fadeOut');
+			$('.overlay-bco').fadeOut(500);
 		setTimeout(function(){
 			$('.preloader').addClass('top-circle');
 			$('#logo-png').addClass('top-logo');
-		}, 800);
-	}, 500);
+		}, 500);
+	}, 2500);
 
 	setTimeout(function(){
 		$('#logo-texto').removeClass('hide');
 		$('#logo-texto').addClass('animated fadeIn');
 		$('#logo-png').addClass('animated fadeOut');
-	}, 9900);
+	}, 4200);
 
 	$('.suite-preview').on('mouseover', function(){
 
-		$('.home-suites-title').addClass('fadeOut')
-								.html($(this).attr('data-title'))
-								.removeClass('fadeOut')
-								.addClass('fadeIn');
+		// $('.home-suites-title').addClass('fadeOut')
+		// 						.html($(this).attr('data-title'))
+		// 						.removeClass('fadeOut')
+		// 						.addClass('fadeIn');
 
 		// $('.home-suites-title').animate({ opacity:0, 'letter-spacing': '45px'}, 100);
 
