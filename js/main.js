@@ -61,32 +61,10 @@
 		$('#logo-png').addClass('animated fadeOut');
 	}, 4200);
 
-	$('.suite-preview').on('mouseover', function(){
-
-		// $('.home-suites-title').addClass('fadeOut')
-		// 						.html($(this).attr('data-title'))
-		// 						.removeClass('fadeOut')
-		// 						.addClass('fadeIn');
-
-		// $('.home-suites-title').animate({ opacity:0, 'letter-spacing': '45px'}, 100);
-
-	});
-
 	$('.suite-preview').on('mouseout', function(){
 		$('.home-suites-title').removeClass('fadeIn').html('NUESTRAS SUITES');
 		// $('.home-suites-title').html('NUESTRAS SUITES');
 	});
-
-
-	$(window).scroll(function () {
-        if ($(this).scrollTop() > $("#wrapper").offset().top - 80) {
-            $('#texto').addClass('appear');
-        } else {
-            
-        }
-       
-    });
-
 
 	$(window).load(function() {
 
@@ -145,5 +123,94 @@
 
 		// parallaxOn();
 	});
+
+    $('.gallery-events').slick({
+        lazyLoad: 'ondemand',
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        swipeToSlide: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        arrows: false,
+        dots: false,
+        fade: true,
+        adaptiveHeight: true
+    });
+
+    $('.gallery-azotea').slick({
+        lazyLoad: 'ondemand',
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        swipeToSlide: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        arrows: false,
+        dots: false,
+        responsive: [
+        {
+            breakpoint: 420,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 1500,
+            settings: {
+                slidesToShow: 3,
+            }
+        }]
+    });
 	
 })( jQuery);
+
+$(function () {
+
+    var controller = new ScrollMagic.Controller();
+
+    new ScrollMagic.Scene({ triggerElement: "#wrapper", triggerHook: "onLeave" })
+        .setClassToggle('#nav-menu', 'fixed-menu')
+        // .addIndicators()
+        .addTo(controller);
+});
+
+$(function () {
+
+    var controller = new ScrollMagic.Controller();
+
+    var wipeAnimation = new TimelineMax()
+        .to("#slide-container", 0.5, {z: -150, delay: 1})
+        .to("#slide-container", 1, {x: "-33.33%"})
+        .to("#slide-container", 0.5, {z: 0})
+        .to("#slide-container", 0.5, {z: -150, delay: 1})
+        .to("#slide-container", 1, {x: "-66.66%"})
+        .to("#slide-container", 0.5, {z: 0})
+        .to("#slide-container", 0, {delay: 1});
+
+    new ScrollMagic.Scene({
+            triggerElement: "#home-about",
+            triggerHook: "onLeave",
+            duration: "500%"
+        })
+        .setPin("#home-about")
+        .setTween(wipeAnimation)
+        // .addIndicators()        
+        .addTo(controller);
+
+    new ScrollMagic.Scene({ triggerElement: "#home-about", triggerHook: "onLeave" })
+        .setClassToggle('.elem-slide-1', 'show-slide-1')
+        // .addIndicators()
+        .addTo(controller);
+
+    new ScrollMagic.Scene({ triggerElement: "#home-about", triggerHook: "onLeave", offset: 1400 })
+        .setClassToggle('.elem-slide-2', 'show-slide-2')
+        // .addIndicators({name: "slide-2"})
+        .addTo(controller);
+
+    new ScrollMagic.Scene({ triggerElement: "#home-about", triggerHook: "onLeave", offset: 2800 })
+        .setClassToggle('.elem-slide-3', 'show-slide-3')
+        // .addIndicators({name: "slide-3"})
+        .addTo(controller);
+
+});
