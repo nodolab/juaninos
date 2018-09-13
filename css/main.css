@@ -9,6 +9,7 @@
     --font-color: #626262;
     --gold: #e0bb6d;
     --gold-darken: #A0864E;
+    --gray: #f2f2f2;
     --gray-soften: #e2e2e2;
     --black: #111;
 }
@@ -431,6 +432,10 @@ footer .footer-menu ul {
     padding: 30px;
 }
 
+.padding-card-tour {
+    padding: 15px 30px;
+}
+
 /**Margins**/
 
 .no-margin {
@@ -495,6 +500,20 @@ footer .footer-menu ul {
 .bg-primary {
     background: var(--primary);
     color: var(--white);
+}
+
+.bg-gray {
+    background-color: var(--gray);
+}
+
+/** Heights **/
+
+.h-410 {
+    height: 410px;
+}
+
+.h-500 {
+    height: 500px;
 }
 
 /** Flex **/
@@ -1259,6 +1278,16 @@ textarea.input__field--hoshi {
 a.link {
     text-decoration: none;
     color: var(--font-color);
+}
+
+a.link-cta {
+    text-decoration: none;
+    color: var(--gold);
+    transition: all 0.3s;
+}
+
+a.link-cta:hover {
+    color: var(--gold-darken);
 }
 
 .historia {
