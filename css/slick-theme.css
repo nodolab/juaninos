@@ -36,7 +36,7 @@
 
     cursor: pointer;
 
-    color: transparent;
+    color: #000;
     border: none;
     outline: none;
     background: transparent;
@@ -67,7 +67,7 @@
 .slick-next:before
 {
     font-family: 'slick';
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1;
 
     opacity: .75;
@@ -79,7 +79,8 @@
 
 .slick-prev
 {
-    left: -25px;
+    z-index: 10;
+    left: 12px;
 }
 [dir='rtl'] .slick-prev
 {
@@ -97,7 +98,7 @@
 
 .slick-next
 {
-    right: -25px;
+    right: 22px;
 }
 [dir='rtl'] .slick-next
 {

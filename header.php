@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/slick-theme.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/vegas.min.css">
 </head>
 
 <body>
@@ -50,6 +51,6 @@
             </svg>
         </div>
         <div class="hide" id="logo-texto">
-            <img src="./img/logo_bco.png" alt="" class="img-responsive">
+            <a href="./"><img src="./img/logo_bco.png" alt="" class="img-responsive"></a>
         </div>
     </div>
