@@ -4,34 +4,26 @@ $title = 'Destino';
 include 'header.php';
  
 ?>
-
-<section class="header-section flex-column-center header-overlay" style="background-image: url('./img/atractivos/destacado.jpg');background-position: center bottom;">
+<section class="header-section flex-column-center slider-atractivos vegas-overlay" style="height: 100vh;">
     <div class="col-sm-6 padding-card text-center">
-        <h1 style="color: #FFF;
-        display: inline-block;
-        border-bottom: 2px solid #FFF;
-        padding-bottom: 12px;
-        font-weight: bold;
-        font-size: 30px;">ATRACTIVOS TURÍSTICOS</h1>
+        <h1 style="color: #FFF; display: inline-block; border-bottom: 2px solid #FFF; padding-bottom: 3px;">ATRACTIVOS TURÍSTICOS</h1>
     </div>
-    <?php
-        include ('nav.php');
-    ?>
+<?php include 'nav.php'; ?>
 </section>
 
 <div id="wrapper" class="wrapper parallax">
 
-    <section id="historia" class="historia">
+    <section id="destino" class="section-content">
 
         <div class="container">
 
             <div class="row">
 
-                <div class="col-sm-12 mb-50 title-section">
+                <div class="col-sm-12 mb-50 title-section wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0s">
                     <h1 class="title">ATRACTIVOS TURÍSTICOS</h1>
                 </div>
 
-                <div class="col-sm-8 col-sm-offset-2 text-center mb-80">
+                <div class="col-sm-8 col-sm-offset-2 text-center mb-80 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0s">
                     <p>
                         Michoacán cuenta con 8 Pueblos Mágicos, lugares representativos de la cultura michoacana: Pátzcuaro, Cuitzeo, Santa Clara del Cobre, Tlalpujahua, Angangueo, Tzintzuntzan, Jiquilpan y Tacámbaro son solo una pequeña muestra de la belleza de este estado. La UNESCO nos ha privilegiado con seis nombramientos Patrimonio de la Humanidad: Morelia y su centro histórico, la biósfera de la Mariposa Monarca, la tradición de Noche de Muertos, la música michoacana conocida como "Pirekuas", la deliciosa gastronomía michoacana y los Voladores de San Pedro.
                     </p>
@@ -44,7 +36,7 @@ include 'header.php';
         </div>
 
         <!-- Slider Alimentos -->
-        <div class="gallery gallery-azotea mb-80">
+        <div class="gallery gallery-azotea mb-80 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0s">
             <div>
                 <img src="" data-lazy="img/atractivos/1.jpg" alt="" class="img-responsive">
             </div>
@@ -94,11 +86,11 @@ include 'header.php';
 
                 <div class="col-sm-8 col-sm-offset-2">
 
-                    <div class="col-sm-12 mb-50 title-section">
+                    <div class="col-sm-12 mb-50 title-section wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0s">
                         <h1 class="title" >EXCURSIONES</h1>
                     </div>
 
-                    <p class="text-center">Vive los mejores Tours y Actividades en Michoacán, conoce sus atractivos y disfruta de unas hermosas vacaciones.</p>
+                    <p class="text-center wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0s">Vive los mejores Tours y Actividades en Michoacán, conoce sus atractivos y disfruta de unas hermosas vacaciones.</p>
 
                 </div>
             </div>
@@ -108,7 +100,7 @@ include 'header.php';
 
         <div class="row">
             <div class="container">
-                <div class="col-xs-12 col-md-4 mb-30">
+                <div class="col-xs-12 col-md-4 mb-30 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0s">
                     <div class="col-xs-12 padding-card-tour bg-gray h-410">
                         <header class="text-center">
                             <h2>Morelia, contexto histórico</h2>
@@ -126,7 +118,7 @@ include 'header.php';
                         </ul>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-4 mb-30">
+                <div class="col-xs-12 col-md-4 mb-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0s">
                     <div class="col-xs-12 padding-card-tour bg-gray h-410">
                         <header class="text-center">
                             <h2>Morelia Colonial</h2>
@@ -144,7 +136,7 @@ include 'header.php';
                         </ul>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-4 mb-30">
+                <div class="col-xs-12 col-md-4 mb-30 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0s">
                     <div class="col-xs-12 padding-card-tour bg-gray h-410">
                         <header class="text-center">
                             <h2>Por el camino a Pátzcuaro</h2>
@@ -158,7 +150,7 @@ include 'header.php';
                         </ul>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-4 mb-30">
+                <div class="col-xs-12 col-md-4 mb-30 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0s">
                     <div class="col-xs-12 padding-card-tour bg-gray h-410">
                         <header class="text-center">
                             <h2>Pátzcuaro</h2>
@@ -173,7 +165,7 @@ include 'header.php';
                         </ul>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-4 mb-30">
+                <div class="col-xs-12 col-md-4 mb-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0s">
                     <div class="col-xs-12 padding-card-tour bg-gray h-410">
                         <header class="text-center">
                             <h2>Alrededor del Lago de Pátzcuaro</h2>
@@ -190,7 +182,7 @@ include 'header.php';
                         </ul>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-4 mb-30">
+                <div class="col-xs-12 col-md-4 mb-30 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0s">
                     <div class="col-xs-12 padding-card-tour bg-gray h-410">
                         <header class="text-center">
                             <h2>Zona Arqueológica</h2>
@@ -204,7 +196,7 @@ include 'header.php';
                         </ul>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-4 mb-30">
+                <div class="col-xs-12 col-md-4 mb-30 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0s">
                     <div class="col-xs-12 padding-card-tour bg-gray h-410">
                         <header class="text-center">
                             <h2>La ruta de la Monarca</h2>
@@ -221,7 +213,7 @@ include 'header.php';
                         </ul>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-8 mb-30">
+                <div class="col-xs-12 col-md-8 mb-30 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0s">
                     <div class="col-xs-12 padding-card-tour bg-gray h-410">
                         <header class="text-center">
                             <h2>Cielos Historiados de Michoacán</h2>
@@ -256,12 +248,9 @@ include 'header.php';
             </div>
         </div>
 
-
-
-
         <div class="modal fade" id="excursiones" tabindex="-1" role="dialog" aria-labelledby="excursionesLabel" aria-hidden="true">
           <div class="modal-dialog modal-lg" style="min-width: 90%;">
-            <div class="modal-content" style="border-radius: 0px;">
+            <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="excursionesLabel">Excursiones especiales</h4>
@@ -297,7 +286,8 @@ include 'header.php';
 </div>
 
 <div class="container">
-    <div class="row">
+
+    <div class="row wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0s">
 
 
         <div class="col-xs-12 col-md-6 padding-card bg-primary" style="max-height: 320px; height: 320px;">
@@ -320,3 +310,4 @@ include 'header.php';
 </div>
 
 <?php include 'footer.php'; ?>
+

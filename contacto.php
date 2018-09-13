@@ -14,7 +14,7 @@ include 'header.php';
 
     <div id="wrapper" class="wrapper parallax">
     
-        <section id="historia" class="historia">
+        <section id="contacto" class="section-content">
             
             <div class="container">
 

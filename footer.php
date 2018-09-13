@@ -31,7 +31,7 @@
 <script src="js/vendor/modernizr-3.6.0.min.js"></script>
 <script src="https://code.jquery.com/jquery-2.0.2.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.0.2.min.js"><\/script>')</script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
@@ -43,6 +43,8 @@
 <script src="js/vendor/wow.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
+<script src="js/vegas.min.js"></script>
+<script  type="text/javascript" src="js/jquery.smoove.js"></script>
 <script type="text/javascript">
     $(function () {
 
@@ -64,12 +66,65 @@
         swipeToSlide: true,
         autoplay: true,
         autoplaySpeed: 4000,
-        arrows: false,
+        arrows: true,
         dots: false,
         fade: true,
         adaptiveHeight: true
     });
 </script>
+
+<script>
+    $(function() {
+    $('.slider-nosotros').vegas({
+        slides: [
+            { src: 'img/fachada.jpg' },
+            { src: 'img/nosotros_head.jpg' },
+            { src: 'img/nosotros_4.jpg' }
+        ],
+        overlay: true,
+        animation: 'random'
+    });
+    $('.slider-azotea').vegas({
+        slides: [
+            { src: 'img/juaninos_04.jpg' },
+            { src: 'img/restaurante1.jpg' },
+            { src: 'img/restaurante4.jpg' },
+            { src: 'img/restaurante3.jpg' }
+        ],
+        overlay: true,
+        animation: 'random'
+    });
+    $('.slider-eventos').vegas({
+        slides: [
+            { src: 'img/patio_9.jpg' },
+            { src: 'img/patio_6.jpg' },
+            { src: 'img/eventos/ejecutiva_3.jpg' }
+        ],
+        overlay: true,
+        animation: 'random'
+    });
+    $('.slider-matrimonio').vegas({
+        slides: [
+            { src: 'img/matrimonio/destacado.jpg' },
+            { src: 'img/matrimonio/destacado2.jpg' },
+            { src: 'img/matrimonio/destacado3.jpg' }
+        ],
+        overlay: true,
+        animation: 'random'
+    });
+
+    $('.slider-atractivos').vegas({
+        slides: [
+            { src: 'img/atractivos/d3.jpg' },
+            { src: 'img/atractivos/d1.jpg' },
+            { src: 'img/atractivos/CATEDRAL3.jpg' }
+        ],
+        overlay: true,
+        animation: 'random'
+    });
+
+});
+  </script>
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>
