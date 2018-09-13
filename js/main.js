@@ -214,3 +214,32 @@ $(function () {
         .addTo(controller);
 
 });
+
+$(function () {
+
+    [].slice.call( document.querySelectorAll( 'input.input__field, textarea.input__field' ) ).forEach( function( inputEl ) {
+        // in case the input is already filled..
+        if( inputEl.value.trim() !== '' ) {
+            $(this).parent().addClass('input--filled');
+            // classie.add( inputEl.parentNode, 'input--filled' );
+        }
+
+        // events:
+        inputEl.addEventListener( 'focus', onInputFocus );
+        inputEl.addEventListener( 'blur', onInputBlur );
+    } );
+
+    function onInputFocus( ev ) {
+        $(this).parent().addClass('input--filled');
+        // classie.add( ev.target.parentNode, 'input--filled' );
+    }
+
+    function onInputBlur( ev ) {
+        if( ev.target.value.trim() === '' ) {
+            $(this).parent().removeClass('input--filled');
+            // classie.remove( ev.target.parentNode, 'input--filled' );
+        }
+    }
+
+});
+
