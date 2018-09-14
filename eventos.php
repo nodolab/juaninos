@@ -15,7 +15,7 @@ include 'header.php';
 
     <div id="wrapper" class="wrapper parallax">
     
-        <section id="historia" class="historia">
+        <section id="eventos" class="section-content">
             
             <div class="container">
                 
@@ -68,10 +68,10 @@ include 'header.php';
                                     <img src="img/eventos/patio_8.jpg" alt="" class="img-responsive">
                                 </div>
                                 <div class="grid-item area-4">
-                                    <img src="img/eventos/patio_6.jpg" alt="" class="img-responsive">
+                                    <img src="img/eventos/patio_9.jpg" alt="" class="img-responsive">
                                 </div>
                                 <div class="grid-item">
-                                    <img src="img/eventos/patio_9.jpg" alt="" class="img-responsive">
+                                    <img src="img/eventos/patio_6.jpg" alt="" class="img-responsive">
                                 </div>
                             </div>
                         </div>  

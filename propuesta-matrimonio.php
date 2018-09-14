@@ -8,8 +8,8 @@ include 'header.php';
     <div class="col-sm-6 padding-card text-center">
         <h1 style="color: #FFF; display: inline-block; border-bottom: 2px solid #FFF; padding-bottom: 3px;">PROPUESTA DE MATRIMONIO</h1>
     </div>
-<?php include 'nav.php'; ?>
 </section>
+<?php include 'nav.php'; ?>
 
 <div id="wrapper" class="wrapper parallax">
 

@@ -42,9 +42,10 @@
 <script src="js/vendor/slick.min.js"></script>
 <script src="js/vendor/wow.min.js"></script>
 <script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+<script src="js/animatedModal.min.js"></script>
 <script src="js/vegas.min.js"></script>
 <script  type="text/javascript" src="js/jquery.smoove.js"></script>
+<script src="js/main.js"></script>
 <script type="text/javascript">
     $(function () {
 
