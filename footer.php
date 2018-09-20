@@ -76,55 +76,59 @@
 
 <script>
     $(function() {
-    $('.slider-nosotros').vegas({
-        slides: [
-            { src: 'img/fachada.jpg' },
-            { src: 'img/nosotros_head.jpg' },
-            { src: 'img/nosotros_4.jpg' }
-        ],
-        overlay: true,
-        animation: 'random'
-    });
-    $('.slider-azotea').vegas({
-        slides: [
-            { src: 'img/juaninos_04.jpg' },
-            { src: 'img/restaurante1.jpg' },
-            { src: 'img/restaurante4.jpg' },
-            { src: 'img/restaurante3.jpg' }
-        ],
-        overlay: true,
-        animation: 'random'
-    });
-    $('.slider-eventos').vegas({
-        slides: [
-            { src: 'img/patio_9.jpg' },
-            { src: 'img/patio_6.jpg' },
-            { src: 'img/eventos/ejecutiva_3.jpg' }
-        ],
-        overlay: true,
-        animation: 'random'
-    });
-    $('.slider-matrimonio').vegas({
-        slides: [
-            { src: 'img/matrimonio/destacado.jpg' },
-            { src: 'img/matrimonio/destacado2.jpg' },
-            { src: 'img/matrimonio/destacado3.jpg' }
-        ],
-        overlay: true,
-        animation: 'random'
-    });
+        $("#modal-destino").animatedModal({
+            color: '#FFF',
+            modalTarget: 'modalDestino'
+        });
+        $('.slider-nosotros').vegas({
+            slides: [
+                { src: 'img/fachada.jpg' },
+                { src: 'img/nosotros_head.jpg' },
+                { src: 'img/nosotros_4.jpg' }
+            ],
+            overlay: true,
+            animation: 'random'
+        });
+        $('.slider-azotea').vegas({
+            slides: [
+                { src: 'img/juaninos_04.jpg' },
+                { src: 'img/restaurante1.jpg' },
+                { src: 'img/restaurante4.jpg' },
+                { src: 'img/restaurante3.jpg' }
+            ],
+            overlay: true,
+            animation: 'random'
+        });
+        $('.slider-eventos').vegas({
+            slides: [
+                { src: 'img/patio_9.jpg' },
+                { src: 'img/patio_6.jpg' },
+                { src: 'img/eventos/ejecutiva_3.jpg' }
+            ],
+            overlay: true,
+            animation: 'random'
+        });
+        $('.slider-matrimonio').vegas({
+            slides: [
+                { src: 'img/matrimonio/destacado.jpg' },
+                { src: 'img/matrimonio/destacado2.jpg' },
+                { src: 'img/matrimonio/destacado3.jpg' }
+            ],
+            overlay: true,
+            animation: 'random'
+        });
 
-    $('.slider-atractivos').vegas({
-        slides: [
-            { src: 'img/atractivos/d3.jpg' },
-            { src: 'img/atractivos/d1.jpg' },
-            { src: 'img/atractivos/CATEDRAL3.jpg' }
-        ],
-        overlay: true,
-        animation: 'random'
-    });
+        $('.slider-atractivos').vegas({
+            slides: [
+                { src: 'img/atractivos/d3.jpg' },
+                { src: 'img/atractivos/d1.jpg' },
+                { src: 'img/atractivos/CATEDRAL3.jpg' }
+            ],
+            overlay: true,
+            animation: 'random'
+        });
 
-});
+    });
   </script>
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
