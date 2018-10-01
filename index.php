@@ -64,11 +64,6 @@ include 'header.php';
                         <a href="">MASTER SUITE DE LA ESQUINA</a>
                     </div>
                 </div>
-                <div class="suite-preview suite-4 no-padding" data-title="MASTER SUITE INTERIOR" style="background-image: url('./img/master_interior.jpg');">
-                    <div class="bar">
-                        <a href="">MASTER SUITE INTERIOR</a>
-                    </div>
-                </div>
             </div>
 
             <h1 class="title home-suites-title animated">NUESTRAS SUITES</h1>

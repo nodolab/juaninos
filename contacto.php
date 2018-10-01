@@ -28,7 +28,7 @@ include 'header.php';
                         
                         <form action="">
                             <span class="input input--hoshi">
-                                <input class="input__field input__field--hoshi" type="text" id="name" name="name" />
+                                <input class="input__field input__field--hoshi"  type="text" id="name" name="name" />
                                 <label class="input__label input__label--hoshi " for="name">
                                     <span class="input__label-content input__label-content--hoshi">Nombre</span>
                                 </label>
@@ -46,14 +46,14 @@ include 'header.php';
                                 </label>
                             </span>
                             <span class="input input--hoshi">
-                                <textarea class="input__field input__field--hoshi" type="text" id="message" name="message" rows="5" /></textarea>
-                                <label class="input__textarea input__label input__label--hoshi " for="message">
+                                <textarea class="input__field input__field--hoshi" type="text" id="message" name="message" rows="5"></textarea>
+                                <label class="input__textarea input__label input__label--hoshi" for="message">
                                     <span class="input__label-content input__label-content--hoshi">Mensaje</span>
                                 </label>
                             </span>
 
                             <div class="col-sm-12">
-                                <button type="submit" class="btn-form btn-cta"">ENVIAR</button>
+                                <button type="submit" class="btn-form btn-cta">ENVIAR</button>
                             </div>
                         </form>
 
