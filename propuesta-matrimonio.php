@@ -2,7 +2,7 @@
 
 $title = 'PROPUESTA DE MATRIMONIO';
 include 'header.php';
- 
+
 ?>
 <section class="header-section flex-column-center slider-matrimonio vegas-overlay" style="height: 100vh;">
     <div class="col-sm-6 padding-card text-center">
@@ -25,11 +25,10 @@ include 'header.php';
 
                 <div class="col-sm-8 col-sm-offset-2 text-center mb-80 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0s">
                     <p>
-                        Michoacán cuenta con 8 Pueblos Mágicos, lugares representativos de la cultura michoacana: Pátzcuaro, Cuitzeo, Santa Clara del Cobre, Tlalpujahua, Angangueo, Tzintzuntzan, Jiquilpan y Tacámbaro son solo una pequeña muestra de la belleza de este estado. La UNESCO nos ha privilegiado con seis nombramientos Patrimonio de la Humanidad: Morelia y su centro histórico, la biósfera de la Mariposa Monarca, la tradición de Noche de Muertos, la música michoacana conocida como "Pirekuas", la deliciosa gastronomía michoacana y los Voladores de San Pedro.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum efficitur sollicitudin. Integer nibh dolor, semper non efficitur a, ultricies sit amet tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent erat odio, consequat sed elit ut, mollis feugiat elit. Ut semper neque vel felis tincidunt porttitor. Ut ullamcorper lobortis tortor. Praesent mollis posuere metus, vitae vestibulum lacus suscipit eu. Maecenas consequat orci sit amet urna lobortis finibus. Aenean aliquet tortor id erat ornare cursus sit amet et mauris. Praesent sollicitudin faucibus leo tempor venenatis.
                     </p>
 
                 </div>
-
 
             </div>
 
@@ -47,20 +46,30 @@ include 'header.php';
                 <img src="" data-lazy="img/matrimonio/4.jpg" alt="" class="img-responsive">
             </div>
             <div >
-                <img src="" data-lazy="img/matrimonio/5.jpg" alt="" class="img-responsive">
-            </div>
-            <div >
                 <img src="" data-lazy="img/matrimonio/6.jpg" alt="" class="img-responsive">
             </div>
             <div >
                 <img src="" data-lazy="img/matrimonio/7.jpg" alt="" class="img-responsive">
+            </div>
+            <div >
+                <img src="" data-lazy="img/master_interior.jpg" alt="" class="img-responsive">
+            </div>
+            <div >
+                <img src="" data-lazy="img/matrimonio/8.jpg" alt="" class="img-responsive">
             </div>
 
         </div>
 
         <div class="container">
 
-            <div class="col-xs-12 text-center mb-80 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0s">
+            <div class="col-xs-12 col-md-6 col-md-offset-3 text-center mb-80 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0s">
+                <video src="http://www.hoteljuaninos.com.mx/libraries/mediafiles/videos/2075040976_20141224175835.mp4" controls>
+                  Tu navegador no implementa el elemento <code>video</code>.
+              </video>
+            </div>
+
+
+              <div class="col-xs-12 text-center mb-80 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0s">
                 <a href="#!" class="btn-cta" style="text-decoration: none; color: #FFF;">SOLICITAR COTIZACIÓN</a>
             </div>
 
@@ -69,7 +78,7 @@ include 'header.php';
 
 
 
-</section>
+    </section>
 </div>
 
 <?php include 'footer.php'; ?>

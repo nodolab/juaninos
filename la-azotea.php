@@ -35,76 +35,79 @@ include 'header.php';
 
         <!-- Slider Alimentos -->
         <div class="gallery-azotea mb-80 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0s">
-
-            <div >
-                <img src="" data-lazy="img/restaurante/platillo2.jpg" alt="" class="img-responsive">
-            </div>
-            <div >
-                <img src="" data-lazy="img/restaurante/platillo3.jpg" alt="" class="img-responsive">
+            <div>
+                <img src="" data-lazy="img/restaurante/image25.jpg" alt="" class="img-responsive">
             </div>
             <div >
-                <img src="" data-lazy="img/restaurante/platillo4.jpg" alt="" class="img-responsive">
+                <img src="" data-lazy="img/restaurante/image1.jpg" alt="" class="img-responsive">
             </div>
             <div >
-                <img src="" data-lazy="img/restaurante/platillo6.jpg" alt="" class="img-responsive">
+                <img src="" data-lazy="img/restaurante/image2.jpg" alt="" class="img-responsive">
             </div>
             <div >
-                <img src="" data-lazy="img/restaurante/platillo7.jpg" alt="" class="img-responsive">
+                <img src="" data-lazy="img/restaurante/image3.jpg" alt="" class="img-responsive">
             </div>
             <div >
-                <img src="" data-lazy="img/restaurante/platillo8.jpg" alt="" class="img-responsive">
+                <img src="" data-lazy="img/restaurante/image4.jpg" alt="" class="img-responsive">
             </div>
             <div >
-                <img src="" data-lazy="img/restaurante/platillo9.jpg" alt="" class="img-responsive">
+                <img src="" data-lazy="img/restaurante/image5.jpg" alt="" class="img-responsive">
+            </div>
+            <div >
+                <img src="" data-lazy="img/restaurante/image6.jpg" alt="" class="img-responsive">
+            </div>
+            <!--<div >
+                <img src="" data-lazy="img/restaurante/image7.jpg" alt="" class="img-responsive">
+            </div>-->
+            <div >
+                <img src="" data-lazy="img/restaurante/image8.jpg" alt="" class="img-responsive">
+            </div>
+            <div >
+                <img src="" data-lazy="img/restaurante/image9.jpg" alt="" class="img-responsive">
             </div>
             <div>
-                <img src="" data-lazy="img/restaurante/platillo10.jpg" alt="" class="img-responsive">
+                <img src="" data-lazy="img/restaurante/image10.jpg" alt="" class="img-responsive">
             </div>
             <div>
-                <img src="" data-lazy="img/restaurante/platillo11.jpg" alt="" class="img-responsive">
+                <img src="" data-lazy="img/restaurante/image12.jpg" alt="" class="img-responsive">
             </div>
             <div>
-                <img src="" data-lazy="img/restaurante/platillo12.jpg" alt="" class="img-responsive">
+                <img src="" data-lazy="img/restaurante/image13.jpg" alt="" class="img-responsive">
             </div>
             <div>
-                <img src="" data-lazy="img/restaurante/platillo13.jpg" alt="" class="img-responsive">
+                <img src="" data-lazy="img/restaurante/image14.jpg" alt="" class="img-responsive">
             </div>
             <div>
-                <img src="" data-lazy="img/restaurante/platillo14.jpg" alt="" class="img-responsive">
+                <img src="" data-lazy="img/restaurante/image15.jpg" alt="" class="img-responsive">
             </div>
             <div>
-                <img src="" data-lazy="img/restaurante/platillo15.jpg" alt="" class="img-responsive">
+                <img src="" data-lazy="img/restaurante/image16.jpg" alt="" class="img-responsive">
             </div>
             <div>
-                <img src="" data-lazy="img/restaurante/platillo16.jpg" alt="" class="img-responsive">
+                <img src="" data-lazy="img/restaurante/image17.jpg" alt="" class="img-responsive">
             </div>
             <div>
-                <img src="" data-lazy="img/restaurante/platillo17.jpg" alt="" class="img-responsive">
+                <img src="" data-lazy="img/restaurante/image18.jpg" alt="" class="img-responsive">
             </div>
             <div>
-                <img src="" data-lazy="img/restaurante/platillo18.jpg" alt="" class="img-responsive">
+                <img src="" data-lazy="img/restaurante/image19.jpg" alt="" class="img-responsive">
             </div>
             <div>
-                <img src="" data-lazy="img/restaurante/platillo1.jpg" alt="" class="img-responsive">
+                <img src="" data-lazy="img/restaurante/image20.jpg" alt="" class="img-responsive">
             </div>
             <div>
-                <img src="" data-lazy="img/restaurante/platillo20.jpg" alt="" class="img-responsive">
+                <img src="" data-lazy="img/restaurante/image21.jpg" alt="" class="img-responsive">
             </div>
             <div>
-                <img src="" data-lazy="img/restaurante/platillo21.jpg" alt="" class="img-responsive">
+                <img src="" data-lazy="img/restaurante/image22.jpg" alt="" class="img-responsive">
             </div>
             <div>
-                <img src="" data-lazy="img/restaurante/platillo22.jpg" alt="" class="img-responsive">
+                <img src="" data-lazy="img/restaurante/image23.jpg" alt="" class="img-responsive">
             </div>
             <div>
-                <img src="" data-lazy="img/restaurante/platillo23.jpg" alt="" class="img-responsive">
+                <img src="" data-lazy="img/restaurante/image24.jpg" alt="" class="img-responsive">
             </div>
-            <div>
-                <img src="" data-lazy="img/restaurante/platillo24.jpg" alt="" class="img-responsive">
-            </div>
-            <div>
-                <img src="" data-lazy="img/restaurante/platillo25.jpg" alt="" class="img-responsive">
-            </div>
+            
         </div>
 
         <div class="container">
@@ -250,7 +253,10 @@ include 'header.php';
 
             <div class="row wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0s">
                 <script type="text/javascript" src="//www.opentable.com.mx/widget/reservation/loader?rid=442444&amp;domain=commx&amp;type=standard&amp;theme=standard&amp;lang=es&amp;overlay=false&amp;iframe=true"></script>
+
+                <center><h2><a href="mailto:lazotea@hoteljuaninos.com.mx" class="btn btn-default" style="color: #00021f; border-bottom: solid 2px #00021f;">lazotea@hoteljuaninos.com.mx</h2></a></center>
             </div>
+
 
         </div>
 

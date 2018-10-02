@@ -183,15 +183,11 @@ $(function () {
         .to("#slide-container", 0.5, {z: -150, delay: 1})
         .to("#slide-container", 1, {x: "-33.33%"})
         .to("#slide-container", 0.5, {z: 0})
-        .to("#slide-container", 0.5, {z: -150, delay: 1})
-        .to("#slide-container", 1, {x: "-66.66%"})
-        .to("#slide-container", 0.5, {z: 0})
-        .to("#slide-container", 0, {delay: 1});
 
     new ScrollMagic.Scene({
             triggerElement: "#home-about",
             triggerHook: "onLeave",
-            duration: "500%"
+            duration: "300%"
         })
         .setPin("#home-about")
         .setTween(wipeAnimation)
@@ -206,11 +202,6 @@ $(function () {
     new ScrollMagic.Scene({ triggerElement: "#home-about", triggerHook: "onLeave", offset: 1400 })
         .setClassToggle('.elem-slide-2', 'show-slide-2')
         // .addIndicators({name: "slide-2"})
-        .addTo(controller);
-
-    new ScrollMagic.Scene({ triggerElement: "#home-about", triggerHook: "onLeave", offset: 2800 })
-        .setClassToggle('.elem-slide-3', 'show-slide-3')
-        // .addIndicators({name: "slide-3"})
         .addTo(controller);
 
 });

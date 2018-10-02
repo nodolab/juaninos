@@ -22,7 +22,7 @@
 				</span>
 			</div>
 			<div class="col-sm-4">
-				<button type="submit" class="btn-form btn-cta" style="width: 100%; border: 0; margin-top: 47px; cursor: pointer;">Buscar disponibilidad</button>
+				<button type="submit" class="btn-form btn-cta" style="width: 100%; border: 0; margin-top: 47px; cursor: pointer;">BUSCAR DISPONIBILIDAD</button>
 			</div>
 		</form>
 

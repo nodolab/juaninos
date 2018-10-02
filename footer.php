@@ -22,6 +22,7 @@
                 <li><a href="">RESERVAR</a></li>
                 <li><a href="">CERTIFICACIONES</a></li>
                 <li><a href="">POLITICAS DEL HOTEL</a></li>
+                <li><a href="">AVISO DE PRIVACIDAD</a></li>
                 <li><a href="">MAPA DEL SITIO</a></li>
             </ul>
         </div>
@@ -105,19 +106,21 @@
         });
         $('.slider-nosotros').vegas({
             slides: [
-            { src: 'img/fachada.jpg' },
             { src: 'img/nosotros_head.jpg' },
-            { src: 'img/nosotros_4.jpg' }
+            { src: 'img/pasillo2.jpg' }
             ],
             overlay: true,
             animation: 'random'
         });
         $('.slider-azotea').vegas({
             slides: [
-            { src: 'img/juaninos_04.jpg' },
-            { src: 'img/restaurante1.jpg' },
             { src: 'img/restaurante4.jpg' },
-            { src: 'img/restaurante3.jpg' }
+            { src: 'img/image027.jpg' },
+            { src: 'img/restaurante1.jpg' },
+            { src: 'img/bar_terraza.jpg' },
+            { src: 'img/juaninos_04.jpg' },
+            { src: 'img/image033.jpg' },
+            { src: 'img/image035.jpg' }
             ],
             overlay: true,
             animation: 'random'
@@ -144,6 +147,7 @@
         $('.slider-atractivos').vegas({
             slides: [
             { src: 'img/atractivos/d3.jpg' },
+            { src: 'img/atractivos/d2.jpg' },
             { src: 'img/atractivos/d1.jpg' },
             { src: 'img/atractivos/CATEDRAL3.jpg' }
             ],

@@ -62,8 +62,8 @@ include 'header.php';
                         
                         <div class="col-xs-12">
                             <p><strong>Telefono</strong> · +52 443 312 0036</p>
-                            <p><strong>Email</strong> · <a href="mailto:reservaciones@hoteljuaninos.com.mx" class="link">reservaciones@hoteljuaninos.com.mx</a></p>
-                            <p><strong>Dirección</strong>  · Morelos Sur 36, Centro C.P. 58000</p>
+                            <p><strong>Email</strong> · <a href="mailto:reservaciones@hoteljuaninos.com.mx" class="link">reservaciones@hoteljuaninos.com.mx</a> / <a href="mailto:juaninos@hoteljuaninos.com" class="link">juaninos@hoteljuaninos.com</a></p>
+                            <p><strong>Dirección</strong>  · Morelos Sur 39, Centro C.P. 58000. Morelia, Michoacán.</p>
                         </div>
                         <div class="col-xs-12">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.236894866581!2d-101.1934807855206!3d19.702535986731487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842d0e7199b95383%3A0x38b1a34bb25f55d5!2sHotel+Los+Juaninos!5e0!3m2!1ses-419!2smx!4v1536813604730" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen></iframe>

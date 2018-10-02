@@ -24,21 +24,12 @@ include 'header.php';
                     <h3 class="elem-slide-1 label-izq label-izq-2">NUESTROS PASILLOS.</h3>
                     <a href="" class="elem-slide-1 btn btn-nosotros">DETALLES</a>
                 </section>
-                <section class="home-panel" style="background-image: url(./img/bar_terraza2.jpg);" id="img-2">
+                <section class="home-panel" style="background-image: url(./img/image2.jpg);" id="img-2">
                     <div class="elem-slide-2 text-card home-about-card home-about-card-1">
-                        <img src="./img/azotea2.png" class="img-responsive">
                     </div>
                     <h3 class="elem-slide-2 label-der label-der-1">ESPACIO DE VANGUARDIA</h3>
                     <h3 class="elem-slide-2 label-der label-der-2"> Y MODERNISMO</h3>
-                    <a href="" class="elem-slide-2 btn btn-bar">DETALLES</a>
-                </section>
-                <section class="home-panel" style="background-image: url(./img/patio_1.jpg);" id="img-3">
-                    <div class="elem-slide-3 text-card home-about-card home-about-card-2">
-                        <img src="./img/seg_patio.png" class="img-responsive">
-                    </div>
-                    <h3 class="elem-slide-3 label-der label-der-3">MOMENTOS</h3>
-                    <h3 class="elem-slide-3 label-der label-der-4"> PARA TODA LA VIDA</h3>
-                    <a href="" class="elem-slide-3 btn btn-seg-patio">DETALLES</a>                    
+                    <!--<a href="" class="elem-slide-2 btn btn-bar">DETALLES</a>-->
                 </section>
                 <!-- <section class="home-panel" style="background-image: url(./img/master_interior.jpg);"></section> -->
 
