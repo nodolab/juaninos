@@ -70,7 +70,7 @@ include 'header.php';
             </div>
 
 
-              <div class="col-xs-12 text-center mb-80 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0s">
+            <div class="col-xs-12 text-center mb-80 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0s">
                 <a href="#!" class="btn-cta">SOLICITAR COTIZACIÓN</a>
             </div>
 

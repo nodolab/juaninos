@@ -1564,9 +1564,72 @@ table {
     stroke: var(--font-color);
 }
 
-/*.vegas-overlay {
-    height: 100vh;
-}*/
+.first-letter-big {
+    font-size: 4.5rem;
+    float: left;
+    line-height: 4rem;
+    margin: 12px 10px 1px;
+    font-weight: 700;
+    font-family: 'Minion Pro';
+}
+
+.title-suite {
+    font-family: 'Minion Pro';
+    letter-spacing: 3px;
+    font-size: 2.5rem;
+    color: var(--purple);
+}
+
+.title-suite > span {
+    color: var(--gold-darken);
+}
+
+.wrapper-border {
+    float: none;
+    margin: 0 auto;
+    width: 250px;
+    opacity: 0.85;
+}
+
+.wrapper-servicios {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.servicio-item {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.servicio-item:hover {
+    color: var(--gold-darken);
+}
+
+.servicio-item:hover:before {
+    border-color: var(--gold-darken);
+}
+
+.servicio-item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #888;
+    transform: rotateZ(45deg);
+}
 
 /* ==========================================================================
    Helper classes
@@ -1580,59 +1643,59 @@ table {
     transform: rotateY(-30deg);
     }*/
 
-    .box-shadow {
-        box-shadow: 5px 5px 8px #333;
-    }
+.box-shadow {
+    box-shadow: 5px 5px 8px #333;
+}
 
-    .box-shadow-eventos {
-        box-shadow: 3px 3px 6px #acacac;
-    }
+.box-shadow-eventos {
+    box-shadow: 3px 3px 6px #acacac;
+}
 
-    .divider {
-        height: 2px;
-        background: #c2c2c2;
-    }
+.divider {
+    height: 2px;
+    background: #c2c2c2;
+}
 
-    .border-gray-soften {
-        border: 1px solid var(--gray-soften);
-    }
+.border-gray-soften {
+    border: 1px solid var(--gray-soften);
+}
 
-    #ot-widget-container0 iframe {
-        margin: 0 auto;
-        display: flex;
-    }
+#ot-widget-container0 iframe {
+    margin: 0 auto;
+    display: flex;
+}
 
-    .col-center {
-        margin-left: auto;
-        margin-right: auto;
-        float: none;
-    }
+.col-center {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
 
-    @keyframes fadeInDown {
-        0% {
-            opacity: 0;
-            -webkit-transform: translate3d(0,-20%,0);
-            transform: translate3d(0,-20%,0);
-        }
-        100% {
-            opacity: 1;
-            -webkit-transform: none;
-            transform: none;
-        }
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,-20%,0);
+        transform: translate3d(0,-20%,0);
     }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
 
-    @keyframes fadeInUp {
-        0% {
-            opacity: 0;
-            -webkit-transform: translate3d(0,20%,0);
-            transform: translate3d(0,20%,0);
-        }
-        100% {
-            opacity: 1;
-            -webkit-transform: none;
-            transform: none;
-        }
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,20%,0);
+        transform: translate3d(0,20%,0);
     }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
 
 /*
  * Hide visually and from screen readers

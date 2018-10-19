@@ -329,6 +329,18 @@
                     }
                 }]
             });
+        }else if( $('body').hasClass('superior-interior') ){
+            $('.gallery-suite').slick({
+                lazyLoad: 'ondemand',
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                swipeToSlide: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                arrows: true,
+                dots: false,
+            });
         }
 
     });  
