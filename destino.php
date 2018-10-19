@@ -310,12 +310,11 @@ include 'header.php';
     </div>
 </div>
 
-<div class="container">
+<div class="container mb-80">
 
-    <div class="row wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0s">
+    <div class="row wow fadeInRightBig wrapper-card-video" data-wow-duration="1s" data-wow-delay="0s">
 
-
-        <div class="col-xs-12 col-md-6 padding-card bg-primary" style="max-height: 320px; height: 320px;">
+        <div class="col-xs-12 col-md-6 padding-card bg-primary">
             <div class="subtitle mb-30">
                 <h4>MICHOACÁN, EL ALMA DE MÉXICO</h4>
             </div>
@@ -323,7 +322,7 @@ include 'header.php';
                 Michoacán tiene alas, templo de belleza, de coloridas y únicas tradiciones, gastronomía, artesanía, arquitectura, historia, por esto y mucho más, Michoacán es el Alma de México 
             </p>
         </div>
-        <div class="col-xs-12 col-md-6 no-padding" style="max-height: 320px; height: 320px;">
+        <div class="col-xs-12 col-md-6 no-padding">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0b8gnsKfPLk?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
 

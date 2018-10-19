@@ -205,3 +205,22 @@ $(function () {
         .addTo(controller);
 
 });
+
+$(function () {
+    $( "#datepicker" ).datepicker({dateFormat: "dd-mm-yy"});
+    $( "#datepickerone" ).datepicker({dateFormat: "dd-mm-yy"});
+
+    $('#boton-reservar').on('click',function(){
+
+        $('#formulario-reservar').slideDown(600);
+        $('#boton-reservar').slideUp(600);
+
+    });
+
+     $('#cerrar-form').on('click',function(){
+
+        $('#formulario-reservar').slideUp(600);
+        $('#boton-reservar').slideDown(600);
+
+    });
+});

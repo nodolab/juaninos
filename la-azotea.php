@@ -149,7 +149,7 @@ include 'header.php';
 
             <div class="row mb-80">
 
-                <div class="col-sm-12 wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0s" style="display: flex; height: 320px;">
+                <div class="col-sm-12 wow fadeInDownBig wrapper-card-video" data-wow-duration="1s" data-wow-delay="0s">
                     <div class="col-sm-6 padding-card bg-primary">
                         <div class="subtitle mb-30">
                             <h4>COCINA CONTEMPORÁNEA MICHOACANA</h4>
@@ -231,7 +231,7 @@ include 'header.php';
 
             <div class="row mb-80">
 
-                <div class="col-sm-12 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0s" style="display: flex; height: 320px;">
+                <div class="col-sm-12 wow fadeInUpBig wrapper-card-video" data-wow-duration="1s" data-wow-delay="0s">
                     <div class="col-sm-6 padding-card bg-primary">
                         <div class="subtitle mb-30">
                             <h4>COCTELERÍA DE AUTOR</h4>
@@ -254,7 +254,12 @@ include 'header.php';
             <div class="row wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0s">
                 <script type="text/javascript" src="//www.opentable.com.mx/widget/reservation/loader?rid=442444&amp;domain=commx&amp;type=standard&amp;theme=standard&amp;lang=es&amp;overlay=false&amp;iframe=true"></script>
 
-                <center><h2><a href="mailto:lazotea@hoteljuaninos.com.mx" class="btn btn-default" style="color: #00021f; border-bottom: solid 2px #00021f;">lazotea@hoteljuaninos.com.mx</h2></a></center>
+                <div class="col-xs-12 text-center mb-80">
+                    <h2>
+                        <a href="mailto:lazotea@hoteljuaninos.com.mx" class="btn btn-default btn-default-primary">lazotea@hoteljuaninos.com.mx
+                        </a>
+                    </h2>
+                </div>
             </div>
 
 

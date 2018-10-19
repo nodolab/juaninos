@@ -329,114 +329,109 @@ footer .footer-menu ul {
     position: relative;
 }
 
-/*.parallax {
-    width: 100%;
-    height: 100%;
-    background: url(../img/fondo.png);
-    background-position: 50% 0;
-    background-repeat: no-repeat;   
-    background-size: cover;
-    }*/
+.wrapper-card-video {
+    display: flex;
+    min-height: 320px;
+}
 
-    .parallax > section {
-        position: relative;
-    }
+.parallax > section {
+    position: relative;
+}
 
 
-    .title {
-        text-align: center;
-        font-family: "Minion Pro", serif;
-        padding: 0px 10px;    
-    }
+.title {
+    text-align: center;
+    font-family: "Minion Pro", serif;
+    padding: 0px 10px;    
+}
 
-    .subtitle h2,
-    .subtitle-gray h4 {
-        position: relative;
-        color: var(--gray-soften);
-        line-height: 1;
-        padding-left: 28px;
-        margin-bottom: 0;
-    }
+.subtitle h2,
+.subtitle-gray h4 {
+    position: relative;
+    color: var(--gray-soften);
+    line-height: 1;
+    padding-left: 28px;
+    margin-bottom: 0;
+}
 
-    .subtitle h2::before,
-    .subtitle-gray h4::before {
-        content: "";
-        background: var(--gray-soften);
-        height: 2px;
-        width: 20px;
-        position: absolute;
-        top: 0.6rem;
-        left: 0;
-    }
+.subtitle h2::before,
+.subtitle-gray h4::before {
+    content: "";
+    background: var(--gray-soften);
+    height: 2px;
+    width: 20px;
+    position: absolute;
+    top: 0.6rem;
+    left: 0;
+}
 
-    .subtitle-gray h4 {
-        color: var(--font-color);
-    }
+.subtitle-gray h4 {
+    color: var(--font-color);
+}
 
-    .subtitle-gray h4::before {
-        background: var(--font-color);
-        top: 0.3rem;
-    }
+.subtitle-gray h4::before {
+    background: var(--font-color);
+    top: 0.3rem;
+}
 
-    .bio-info .subtitle h2 {
-        color: var(--primary);
-    }
+.bio-info .subtitle h2 {
+    color: var(--primary);
+}
 
-    .bio-info .subtitle h2::before {
-        background-color: var(--primary);
-    }
+.bio-info .subtitle h2::before {
+    background-color: var(--primary);
+}
 
-    .bg-primary .subtitle h4 {
-        position: relative;
-        color: var(--white);
-        line-height: 1;
-        padding-left: 28px;
-        margin-bottom: 0;
-    }
+.bg-primary .subtitle h4 {
+    position: relative;
+    color: var(--white);
+    line-height: 1;
+    padding-left: 28px;
+    margin-bottom: 0;
+}
 
-    .bg-primary .subtitle h4::before {
-        content: "";
-        background: var(--white);
-        height: 2px;
-        width: 20px;
-        position: absolute;
-        top: 0.4rem;
-        left: 0;
-    }
+.bg-primary .subtitle h4::before {
+    content: "";
+    background: var(--white);
+    height: 2px;
+    width: 20px;
+    position: absolute;
+    top: 0.4rem;
+    left: 0;
+}
 
-    .subtitle p {
-        color: var(--primary);
-        font-size: 0.8rem;
-        font-weight: 600;
-        margin-top: 0;
-    }
+.subtitle p {
+    color: var(--primary);
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 0;
+}
 
-    .text-primary {
-        color: var(--primary);
-    }
+.text-primary {
+    color: var(--primary);
+}
 
-    .title-section {
-        /*letter-spacing: 5px;*/
-        /*font-family: "Minion Pro", serif;*/
-        text-align: center;
-    }
+.title-section {
+    /*letter-spacing: 5px;*/
+    /*font-family: "Minion Pro", serif;*/
+    text-align: center;
+}
 
-    .title-section h1 {
-        display: inline-block;
-        font-weight: 400;
-        letter-spacing: 0.3rem;
-        color: var(--primary);
-        font-size: 2rem;
-        line-height: 2rem;
-        padding: 5px 10px 0;
-        border: 2px solid var(--primary);  
-    }
+.title-section h1 {
+    display: inline-block;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+    color: var(--primary);
+    font-size: 2rem;
+    line-height: 2rem;
+    padding: 5px 10px 0;
+    border: 2px solid var(--primary);  
+}
 
-    .title-section h2{
-        display: inline-block;
-        line-height: 1;
-/*    padding-bottom: 5px;
-border-bottom: 2px solid currentcolor;*/
+.title-section h2{
+    display: inline-block;
+    line-height: 1;
+
 }
 
 .title-section-container {
@@ -1456,6 +1451,11 @@ textarea.input__field--hoshi {
     text-align: center;
 }
 
+.btn-default-primary {
+    color: var(--primary);
+    border-bottom-color: var(--priamry); 
+}
+
 .btn-cta {
     display: inline-block;
     text-align: center;
@@ -1498,6 +1498,17 @@ textarea.input__field--hoshi {
 .btn-seg-patio.show-slide-3 {
     bottom: 10%;
     opacity: 1;
+}
+
+.btn-container-reservar {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.btn-container-reservar > a {
+    color: var(--primary);
+    text-decoration: none;
 }
 
 a.link {
