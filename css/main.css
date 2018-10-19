@@ -14,6 +14,25 @@
     --black: #111;
 }
 
+span input .check{
+    margin: 1em !important;
+}
+
+.form-label{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 0em;
+    width: 100%;
+    height: calc(100% - 1em);
+    text-align: left;
+    display: inline-block;
+    float: right;
+    padding: 0;
+    width: 40%;
+    color: #6a7989;
+    font-weight: bold;
+}
 #formulario-reservar{
     display: none;
     position: fixed;
@@ -624,6 +643,10 @@ border-bottom: 2px solid currentcolor;*/
     height: 100%;
 }
 
+#enlace-reservar{
+    cursor: pointer;
+}
+
 .preloader.top-circle {
     position: absolute;
     top: -125px;
@@ -635,8 +658,6 @@ border-bottom: 2px solid currentcolor;*/
     padding-right: 3%;*/
     width: 250px;
     height: 250px;
-    transition: top 1.5s ease, left 1.5s ease, margin-left 1.5s ease, width 1.5s ease, height 1.5s ease;
-    /*transition: all 3s ease-in-out;*/
 }
 
 #logo-svg,
@@ -1457,6 +1478,8 @@ textarea.input__field--hoshi {
 }
 
 .btn-cta {
+    border: 0;
+    cursor: pointer;
     display: inline-block;
     text-align: center;
     padding: 8px 15px;

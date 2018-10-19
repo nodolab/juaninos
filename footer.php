@@ -19,10 +19,10 @@
         <div class="footer-menu">                   
             <ul class="flex-row-center">
                 <li><a href="">NOSOTROS</a></li>
-                <li><a href="">RESERVAR</a></li>
+                <li><a id="enlace-reservar" class="wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0s">RESERVAR</a></li>
                 <li><a href="">CERTIFICACIONES</a></li>
                 <li><a href="">POLITICAS DEL HOTEL</a></li>
-                <li><a href="">AVISO DE PRIVACIDAD</a></li>
+                <li><a id="modal-privacidad" href="#modalPrivacidad">AVISO DE PRIVACIDAD</a></li>
                 <li><a href="">MAPA DEL SITIO</a></li>
             </ul>
         </div>
@@ -39,6 +39,51 @@
         <?php
         include 'reservacion.php';
         ?>
+    </div>
+
+    <div id="modalPrivacidad">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-modalDestino" -->
+        <div class="close-modalPrivacidad text-right"> 
+            <svg id="close-modal-icon" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 52 52" enable-background="new 0 0 52 52" xml:space="preserve">
+                <g>
+                    <circle fill="none" class="close-modal-icon-color" stroke-width="2" stroke-miterlimit="10" cx="26" cy="26" r="25"/>
+                    <g>
+                        <line fill="none" class="close-modal-icon-color" stroke-width="2" stroke-miterlimit="10" x1="33.571" y1="34.278" x2="18.722" y2="19.429"/>
+                        <line fill="none" class="close-modal-icon-color" stroke-width="2" stroke-miterlimit="10" x1="33.571" y1="18.722" x2="18.722" y2="33.571"/>
+                    </g>
+                </g>
+            </svg>
+        </div>
+
+        <div class="modal-content container">
+            <div class="col-sm-12 mb-50 title-section">
+                <h1 class="title" >AVISO DE PRIVACIDAD</h1>
+            </div>
+            <div class="col-xs-12 mb-50 text-justify">
+                <p>
+                    <b>HOTEL JUANINOS</b>, con domicilio en Morelos Sur 39 Centro Histórico CP 58000 .T (52) 443 3120036, es responsable de recabar sus datos personales, del uso que se le de a los mismos y de su protección.
+                </p>
+                <p>
+                    Su información personal será utilizada para proveer los servicios y productos que ha solicitado, informarle sobre cambios en los mismos y evaluar la calidad del servicio que le brindamos. Para las finalidades antes mencionadas, requerimos obtener los siguientes datos personales: Nombre, Domicilio, Teléfono, Correo Electrónico.
+                </p>
+                <p>
+                    Considerado como sensible según la Ley Federal de protección de Datos Personales en Posesión de los Particulares, los referentes a su patrimonio e ingresos.
+                </p>
+                <p>
+                    Usted tiene derecho de acceder, rectificar y cancelar sus datos personales, así como de oponerse al tratamiento de los mismos o revocar el consentimiento que para tal fin nos haya otorgado, a través de los procedimientos que hemos implantado. Para conocer dichos procedimientos, los requisitos y plazos, se puede poner en contacto con  nuestro departamento de datos personales Morelos Sur 39 Centro Histórico CP 58000 .T (52) 443 3120036  o visitar nuestra página www.hoteljuaninos.com.mx
+                </p>
+                <p>
+                    Si usted desea dejar de recibir mensajes promocionales de nuestra parte puede solicitarlo a través de Morelos Sur 39 Centro Histórico CP 58000 .T (52) 443 3120036 o visitar nuestra página de Internet www.hoteljuaninos.com.mx
+                </p>
+                <p>
+                    Cualquier modificación a este aviso de privacidad la podrá consultar en la página electrónica  www.hoteljuaninos.com.mx
+                </p>
+                <p>
+                    Fecha última actualización Febrero 2017.
+                </p>
+
+            </div>
+        </div>
     </div>
 
 
@@ -104,6 +149,22 @@
             color: '#FFF',
             modalTarget: 'modalDestino'
         });
+        $("#modal-segundo-patio").animatedModal({
+            color: '#FFF',
+            modalTarget: 'modalSegundoPatio'
+        });
+        $("#modal-salon").animatedModal({
+            color: '#FFF',
+            modalTarget: 'modalSalon'
+        });
+        $("#modal-ejecutiva").animatedModal({
+            color: '#FFF',
+            modalTarget: 'modalEjecutiva'
+        });
+        $("#modal-privacidad").animatedModal({
+            color: '#FFF',
+            modalTarget: 'modalPrivacidad'
+        });
         $('.slider-nosotros').vegas({
             slides: [
             { src: 'img/nosotros_head.jpg' },
@@ -160,21 +221,27 @@
 
 <script type="text/javascript">
     $(document).ready(function(){ 
-     $('#boton-reservar').on('click',function(){
+       $('#boton-reservar').on('click',function(){
 
         $('#formulario-reservar').slideDown(600);
         $('#boton-reservar').slideUp(600);
 
     });
 
-     $('#cerrar-form').on('click',function(){
+       $('#cerrar-form').on('click',function(){
 
         $('#formulario-reservar').slideUp(600);
         $('#boton-reservar').slideDown(600);
 
     });
 
- });
+       $('#enlace-reservar').on('click',function(){
+
+        $('#formulario-reservar').slideDown(600);
+
+    });
+
+   });
 </script>
 
 

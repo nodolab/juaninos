@@ -59,7 +59,7 @@
 		$('#logo-texto').removeClass('hide');
 		$('#logo-texto').addClass('animated fadeIn');
 		$('#logo-png').addClass('animated fadeOut');
-	}, 4200);
+	}, 3500);
 
 	$('.suite-preview').on('mouseout', function(){
 		$('.home-suites-title').removeClass('fadeIn').html('NUESTRAS SUITES');

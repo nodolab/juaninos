@@ -33,12 +33,6 @@
 <!-- Add your site or application content here -->
     <div class="preloader">
         <div class="overlay-bco"></div>
-        <div class="col-sm-2 hide" id="logo-png">
-            <img src="./img/icono_bco.png" class="img-responsive">
-        </div>
-        <div class="col-sm-2" id="logo-svg">
-           
-        </div>
         <div class="hide" id="logo-texto">
             <a href="./"><img src="./img/logo_bco.png" alt="" class="img-responsive"></a>
         </div>
