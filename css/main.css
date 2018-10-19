@@ -14,15 +14,35 @@
     --black: #111;
 }
 
+span input .check{
+    margin: 1em !important;
+}
+
+.form-label{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 0em;
+    width: 100%;
+    height: calc(100% - 1em);
+    text-align: left;
+    display: inline-block;
+    float: right;
+    padding: 0;
+    width: 40%;
+    color: #6a7989;
+    font-weight: bold;
+}
 #formulario-reservar{
     display: none;
     position: fixed;
     bottom: 0;
     width: 100%;
     background-color: #FFF;
-    z-index: 101;
     padding: 10px;
     height: auto;
+    box-shadow: 0px -1px 3px #999;
+    z-index: 15;
 }
 
 #boton-reservar{
@@ -417,6 +437,13 @@ footer .footer-menu ul {
     text-align: center;
 }
 
+.title-section-slider {
+    color: var(--white);
+    display: inline-block;
+    border-bottom: 2px solid var(--white);
+    padding-bottom: 3px;
+}
+
 .title-section h1 {
     display: inline-block;
     font-weight: 400;
@@ -619,84 +646,19 @@ footer .footer-menu ul {
     height: 100%;
 }
 
-.preloader.top-circle {
-    position: absolute;
-    top: -125px;
-    left: 50%;
-    margin-left: -125px;
-    /*background: transparent;*/
-    /*padding-top: 90px;
-    padding-left: 3%;
-    padding-right: 3%;*/
-    width: 250px;
-    height: 250px;
-    transition: top 1.5s ease, left 1.5s ease, margin-left 1.5s ease, width 1.5s ease, height 1.5s ease;
-    /*transition: all 3s ease-in-out;*/
-}
-
-#logo-svg,
-#logo-png {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    margin-left: -8.333%;
+#enlace-reservar{
+    cursor: pointer;
 }
 
 #logo-texto {
-    width: 69%;
+    width: 220px;
     position: absolute;
-    top: 150px;
-    left: 17%;
-    /*margin-left: -38.5%;*/
+    top: 20px;
+    left: 50%;
+    margin-left: -110px;
+    z-index: 2;
 }
 
-#logo-png.top-logo {
-    width: 32%;
-    top: 150px;
-    left: 34.5%;
-    margin-left: 0;
-    transition: top 1.5s ease, left 1.5s ease, margin-left 1.5s ease, width 1.5s ;
-}
-
-#monje-centro {
-    animation: draw 0.8s ease-in-out 0.35s forwards;
-}
-
-#monje-izquierda {
-    animation: draw 0.8s ease-in-out 0.75s forwards;
-}
-
-#monje-derecha {
-    animation: draw 0.8s ease-in-out 0.75s forwards;
-}
-
-#techo, #balcon {
-    animation: draw 1.10s ease-in-out 1.35s forwards;
-}
-
-#bolita3{
-    animation: draw 0.75s ease-in-out 0.35s forwards;
-}
-
-#bolita2, #bolita4{
-    animation: draw 0.6s ease-in-out 0.75s forwards;
-}
-
-#bolita1, #bolita5{
-    animation: draw 0.5s ease-in-out 1s forwards;
-}
-
-#contorno {
-    animation: draw 2.5s ease-in-out forwards;
-}
-
-@keyframes draw {
-    from{}
-
-    to {
-        stroke-dashoffset: 0;
-    }
-}
 
 /* OwlSlider */
 
@@ -1347,13 +1309,13 @@ textarea.input__field--hoshi {
 
 .suite-preview {
     height: 100%;
-    width: 25%;
+    width: 33.33%;
     position: relative;
     display: table-cell;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
-    transition: all 1.2s ease-in-out; 
+    transition: all 0.8s ease-in-out; 
 }
 
 .suite-preview:before {
@@ -1401,7 +1363,7 @@ textarea.input__field--hoshi {
 }
 
 .home-suites-images:hover > .suite-preview:hover {
-    width: 44%;
+    width: 35%;
 }
 
 .home-suites-images:hover > .suite-preview:hover > .bar {
@@ -1424,12 +1386,11 @@ textarea.input__field--hoshi {
     background-position-x: left;    
 }
 
-.suite-2,
-.suite-3 {
+.suite-2 {
     background-position-x: center;
 }
 
-.suite-4 {
+.suite-3 {
     background-position-x: right; 
 }
 
@@ -1457,6 +1418,8 @@ textarea.input__field--hoshi {
 }
 
 .btn-cta {
+    border: 0;
+    cursor: pointer;
     display: inline-block;
     text-align: center;
     padding: 8px 15px;
@@ -1601,6 +1564,10 @@ table {
     stroke: var(--font-color);
 }
 
+/*.vegas-overlay {
+    height: 100vh;
+}*/
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -1615,6 +1582,10 @@ table {
 
     .box-shadow {
         box-shadow: 5px 5px 8px #333;
+    }
+
+    .box-shadow-eventos {
+        box-shadow: 3px 3px 6px #acacac;
     }
 
     .divider {

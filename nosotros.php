@@ -1,6 +1,7 @@
 <?php 
 
 $title = 'Nosotros';
+$body_class = 'nosotros';
 include 'header.php';
 
 ?>
@@ -8,7 +9,7 @@ include 'header.php';
 
 <section class="header-section flex-column-center slider-nosotros vegas-overlay" style="height: 100vh;">
     <div class="col-sm-6 padding-card text-center">
-        <h1 style="color: #FFF; display: inline-block; border-bottom: 2px solid #FFF; padding-bottom: 3px;">HISTORIA</h1>
+        <h1 class="title-section-slider">HISTORIA</h1>
     </div>
     
 </section>
@@ -20,7 +21,7 @@ include 'header.php';
         <div class="container">
 
             <div class="row title-section mb-80">
-                <h1 class="title wow fadeIn" data-wow-delay="3s">HISTORIA</h1>                    
+                <h1 class="title wow fadeIn" data-wow-delay="0.5s">HISTORIA</h1>                    
             </div>
 
             <div class="row">
@@ -35,7 +36,7 @@ include 'header.php';
                     </div>
                 </div>
                 <div class="col-sm-6 text-justify">
-                    <div class="col-xs-12 mb-50 wow fadeIn" data-wow-delay="3s">
+                    <div class="col-xs-12 mb-50 wow fadeIn" data-wow-delay="1.5s">
                         <img src="./img/escaleras.jpg" alt="" class="img-responsive box-shadow">
                     </div>
                     <p>En 1998, y tras no haber escapado al natural deterioro del tiempo, al cambio de uso e incluso al abandono, el edificio es intervenido para rescatar su magnificencia y esplendor original, restituyéndole la función de hotel, actualmente se puede apreciar su ornamentación ecléctica compuesta por muebles franceses, vitrales art-nouveau, así como espléndidos detalles decorativos de la región.</p>

@@ -1,13 +1,14 @@
 <?php 
 
 $title = 'La Azotea';
+$body_class = 'la-azotea';
 include 'header.php';
 
 ?>
 
 <section class="header-section flex-column-center slider-azotea vegas-overlay" style="height: 100vh;">
     <div class="col-sm-6 padding-card text-center">
-        <h1 style="color: #FFF; display: inline-block; border-bottom: 2px solid #FFF; padding-bottom: 3px;">LA AZOTEA</h1>
+        <h1 class="title-section-slider">LA AZOTEA</h1>
     </div>
 </section>
 <?php include 'nav.php'; ?>

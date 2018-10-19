@@ -1,12 +1,13 @@
 <?php 
 
 $title = 'Destino';
+$body_class = 'destino';
 include 'header.php';
  
 ?>
 <section class="header-section flex-column-center slider-atractivos vegas-overlay" style="height: 100vh;">
     <div class="col-sm-6 padding-card text-center">
-        <h1 style="color: #FFF; display: inline-block; border-bottom: 2px solid #FFF; padding-bottom: 3px;">ATRACTIVOS TURÍSTICOS</h1>
+        <h1 class="title-section-slider">ATRACTIVOS TURÍSTICOS</h1>
     </div>
 </section>
 <?php include 'nav.php'; ?>
@@ -37,7 +38,7 @@ include 'header.php';
         </div>
 
         <!-- Slider Alimentos -->
-        <div class="gallery gallery-azotea mb-80 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0s">
+        <div class="gallery gallery-destino mb-80 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0s">
             <div>
                 <img src="" data-lazy="img/atractivos/1.jpg" alt="" class="img-responsive">
             </div>

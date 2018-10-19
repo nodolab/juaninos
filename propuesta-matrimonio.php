@@ -1,12 +1,13 @@
 <?php 
 
-$title = 'PROPUESTA DE MATRIMONIO';
+$title = 'Propuesta de matrimonio';
+$body_class = 'propuesta-matrimonio';
 include 'header.php';
 
 ?>
 <section class="header-section flex-column-center slider-matrimonio vegas-overlay" style="height: 100vh;">
     <div class="col-sm-6 padding-card text-center">
-        <h1 style="color: #FFF; display: inline-block; border-bottom: 2px solid #FFF; padding-bottom: 3px;">PROPUESTA DE MATRIMONIO</h1>
+        <h1 class="title-section-slider">PROPUESTA DE MATRIMONIO</h1>
     </div>
 </section>
 <?php include 'nav.php'; ?>
@@ -35,7 +36,7 @@ include 'header.php';
         </div>
 
         <!-- Slider Alimentos -->
-        <div class="gallery gallery-azotea mb-80 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0s">
+        <div class="gallery gallery-propuesta mb-80 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0s">
             <div >
                 <img src="" data-lazy="img/matrimonio/2.jpg" alt="" class="img-responsive">
             </div>
@@ -70,7 +71,7 @@ include 'header.php';
 
 
               <div class="col-xs-12 text-center mb-80 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0s">
-                <a href="#!" class="btn-cta" style="text-decoration: none; color: #FFF;">SOLICITAR COTIZACIÓN</a>
+                <a href="#!" class="btn-cta">SOLICITAR COTIZACIÓN</a>
             </div>
 
 

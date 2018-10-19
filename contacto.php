@@ -7,7 +7,7 @@ include 'header.php';
 
     <section class="header-section flex-column-center header-overlay" style="background-image: url('./img/fachada.jpg');">
         <div class="col-sm-6 padding-card text-center">
-            <h1 style="color: #FFF; display: inline-block; border-bottom: 2px solid #FFF; padding-bottom: 3px;">CONTACTO</h1>
+            <h1 class="title-section-slider">CONTACTO</h1>
         </div>
         <?php include 'nav.php'; ?>
     </section>
@@ -19,7 +19,7 @@ include 'header.php';
             <div class="container">
 
                 <div class="row title-section mb-80">
-                    <h1 class="title wow fadeIn" data-wow-delay="3s">CONTACTO</h1>                    
+                    <h1 class="title wow fadeIn" data-wow-delay="0.5s">CONTACTO</h1>                    
                 </div>
                 
                 <div class="row">

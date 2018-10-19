@@ -1,6 +1,7 @@
 <?php 
 
 $title = 'Hotel Juaninos';
+$body_class = 'homepage';
 include 'header.php';
  
 ?>
